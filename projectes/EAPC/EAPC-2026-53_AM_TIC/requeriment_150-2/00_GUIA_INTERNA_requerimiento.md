@@ -133,7 +133,7 @@ Algo útil que se ve en las plantillas: en **disposición de medios** la EAPC so
 
 ## 5. Datos que hay que comprobar antes de firmar
 
-- **Segundo apellido del representante**: en el texto del anexo 14 pone "RAFAEL CORTÉS **CONTRERAS**", pero en el sello de la firma digital aparece "RAFAEL CORTES **CORTES**". En los documentos he puesto "Contreras" marcado en amarillo: hay que dejar el que figura en el DNI y en el certificado.
+- **Segundo apellido del representante**: ✅ **Contreras** (lo confirma su CV). Ya está corregido en los documentos.
 - **Domicilio social**: ✅ **C. Joana Jugan, 2, 43002 Tarragona**. Lo confirman el anexo 14 y la póliza de Occident, y ya está puesto en los documentos. El requerimiento llegó a "C. Apodaca, 6, 1r A, 43004": comprobar qué dirección tiene la EAPC en el RELIC o en el perfil de licitador y unificarla.
 - **Fecha fin de presentación de ofertas**: nuestra oferta se firmó el 10/06/2026 y la de Adecco se presentó ese mismo día. Probablemente el plazo terminaba el 10/06/2026, pero hay que confirmarlo en el anuncio de licitación. Es la fecha en la que el seguro tenía que estar vigente.
 - **Poderes**: notario Manuel Carlos Estrada del Castillo, 13/12/2018, protocolo 2654 (tomado del anexo 14). Comprobar que siguen vigentes.
@@ -155,7 +155,6 @@ Algo útil que se ve en las plantillas: en **disposición de medios** la EAPC so
 ## 8. Checklist
 
 - [ ] Plazo: último día **14/10/2026**; objetivo interno, subirlo el 9/10 — *Gerencia*
-- [ ] Confirmar el segundo apellido del representante (apartado 5) — *Gerencia*
 - [ ] Seguro Allianz: corregir la actividad y los alumnos, emitir la póliza, pagar y pedir el certificado (ver apartado 1) — *Gerencia*
 - [x] Póliza de RC en vigor en junio (Occident): revisada. **No cumple** (sin RC profesional, 300.000 €). No se aporta — *Gerencia*
 - [ ] Confirmar la fecha fin de presentación de ofertas (¿10/06/2026?) y recuperar la lista de docentes que usamos en la oferta — *Gerencia*
