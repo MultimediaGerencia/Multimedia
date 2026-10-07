@@ -51,6 +51,26 @@ Presupuesto de CSC Mediadors (agente vinculado de Allianz), "RC PYME":
 - **Actividad**: "Centre de formació: formació professional per a l'ocupació, formació contínua i formació per a l'Administració pública, en modalitat presencial, en línia síncrona (videoconferència) i en línia asíncrona (entorn virtual d'aprenentatge)".
 - **Número de alumnos realista**: con el acuerdo marco (hasta 2.500 horas de docencia al año, más el resto de la actividad del centro) 500 alumnos se queda corto. Si declaramos menos de lo real hay riesgo de **infraseguro**. Hay que estimarlo con coordinación académica y comunicárselo.
 
+**Póliza actual del centro (Occident, n.º 8-10.898.839-X): no sirve para este requisito.**
+
+| | Póliza Occident actual | Lo que pide el PCAP (G1) |
+|---|---|---|
+| Tipo | Multirriesgo "Centros de enseñanza / oficinas", local de Torredembarra (40 alumnos) | Seguro de **riesgos profesionales** |
+| RC profesional | **No incluida** | Obligatoria |
+| Límite de RC | Explotación 300.000 €. La suma de todas las garantías de RC no puede superar este límite | **≥ 1.588.680 €** |
+| Formación fuera del local / en línea | "RC por trabajos realizados fuera del recinto": **no contratada** | Formación en línea y en espacios de la Generalitat |
+| Vigencia | 21/02/2026 – 21/02/2027 ✅ | En vigor en la fecha fin de ofertas |
+
+Estaba vigente en junio, pero sin RC profesional y con una quinta parte del capital. **No recomiendo aportarla**: no acredita el requisito y deja aún más claro que en junio no lo cumplíamos.
+
+**⚠️ No se puede esperar a "ser ganadores" para contratar.** El requerimiento del 29/09 es precisamente el paso previo a la adjudicación (art. 150.2 LCSP): ya somos la empresa propuesta y la EAPC nos pide que **acreditemos ahora** que disponemos del seguro. Si el 14/10 no lo aportamos, se considera que **retiramos la oferta**, se pasa al siguiente licitador y se aplica una **penalidad de 13.239 €** (3 % del presupuesto, cl. 14.3). El compromiso del anexo 4.f ("en cas de resultar adjudicatari") se materializa justamente en este requerimiento. El seguro de Allianz cuesta 923 €/año.
+
+Para limitar el riesgo si al final no se adjudica, preguntar a la correduría:
+- si la póliza se puede **anular con devolución de la prima no consumida** en caso de no adjudicación; o
+- como alternativa, si Occident/PIB Group puede añadir a la póliza actual un **suplemento de RC profesional de 1.588.680 €** que cubra la formación fuera del local y en línea. Comparar el precio con el de Allianz.
+
+Una carta de la aseguradora que solo se comprometa a emitir la póliza "si resultamos adjudicatarios" **no es suficiente**: el G1 pide un certificado que acredite que **disponemos** del seguro.
+
 **3. Pasos con la correduría (urgente: el presupuesto es válido 15 días y nuestro plazo acaba el 14/10):**
 - [ ] Corregir la actividad y el número de alumnos, y pedir el presupuesto revisado.
 - [ ] Contratar, **emitir la póliza** y **pagar el primer recibo** antes del 9/10.
@@ -114,7 +134,7 @@ Algo útil que se ve en las plantillas: en **disposición de medios** la EAPC so
 ## 5. Datos que hay que comprobar antes de firmar
 
 - **Segundo apellido del representante**: en el texto del anexo 14 pone "RAFAEL CORTÉS **CONTRERAS**", pero en el sello de la firma digital aparece "RAFAEL CORTES **CORTES**". En los documentos he puesto "Contreras" marcado en amarillo: hay que dejar el que figura en el DNI y en el certificado.
-- **Domicilio social**: en el anexo 14 declaramos "carrer Joana Jugan, 2, Tarragona", pero el requerimiento va dirigido a "C. Apodaca, 6, 1r A, 43004 Tarragona". Hay que poner el que conste en el Registro Mercantil / RELIC (y, si ha cambiado, actualizar el RELIC).
+- **Domicilio social**: ✅ **C. Joana Jugan, 2, 43002 Tarragona**. Lo confirman el anexo 14 y la póliza de Occident, y ya está puesto en los documentos. El requerimiento llegó a "C. Apodaca, 6, 1r A, 43004": comprobar qué dirección tiene la EAPC en el RELIC o en el perfil de licitador y unificarla.
 - **Fecha fin de presentación de ofertas**: nuestra oferta se firmó el 10/06/2026 y la de Adecco se presentó ese mismo día. Probablemente el plazo terminaba el 10/06/2026, pero hay que confirmarlo en el anuncio de licitación. Es la fecha en la que el seguro tenía que estar vigente.
 - **Poderes**: notario Manuel Carlos Estrada del Castillo, 13/12/2018, protocolo 2654 (tomado del anexo 14). Comprobar que siguen vigentes.
 
@@ -135,9 +155,9 @@ Algo útil que se ve en las plantillas: en **disposición de medios** la EAPC so
 ## 8. Checklist
 
 - [ ] Plazo: último día **14/10/2026**; objetivo interno, subirlo el 9/10 — *Gerencia*
-- [ ] Confirmar el segundo apellido del representante y el domicilio social (apartado 5) — *Gerencia*
+- [ ] Confirmar el segundo apellido del representante (apartado 5) — *Gerencia*
 - [ ] Seguro Allianz: corregir la actividad y los alumnos, emitir la póliza, pagar y pedir el certificado (ver apartado 1) — *Gerencia*
-- [ ] ¿Teníamos una póliza de RC en vigor en junio de 2026? Si es así, pedir también su certificado — *Gerencia*
+- [x] Póliza de RC en vigor en junio (Occident): revisada. **No cumple** (sin RC profesional, 300.000 €). No se aporta — *Gerencia*
 - [ ] Confirmar la fecha fin de presentación de ofertas (¿10/06/2026?) y recuperar la lista de docentes que usamos en la oferta — *Gerencia*
 - [ ] Descargar la RNT del último periodo liquidado (SILTRA / Sistema RED) — *Gerencia/gestoría*
 - [ ] Elegir los 10 docentes de solvencia (RNT + colaboradores con relación previa documentada) — *Coord. académica*
