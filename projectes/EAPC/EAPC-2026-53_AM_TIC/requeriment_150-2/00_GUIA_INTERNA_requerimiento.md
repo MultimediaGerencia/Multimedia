@@ -20,36 +20,31 @@ Los campos en **amarillo** son los que hay que rellenar. Firmar todo con certifi
 
 | Requisito (requerimiento / PCAP) | Documento | Quién lo consigue |
 |---|---|---|
-| **Solvencia económica**: seguro de RC profesional ≥ valor estimado del lote 1, vigente a la fecha fin de presentación de ofertas (PCAP G1) | Doc. 1: certificado de la aseguradora | Gerencia → correduría (Allianz) |
+| **Solvencia económica**: seguro de RC profesional ≥ valor estimado del lote 1, vigente a la fecha fin de presentación de ofertas (PCAP G1) | Doc. 1: certificado de la aseguradora | Gerencia → correduría (Helvetia, ✅ contratada) |
 | Compromiso de renovación del seguro durante todo el AM y sus prórrogas | Doc. 2: `02_DR_...` | Gerencia |
 | **Solvencia técnica**: mínimo 10 docentes con ≥ 5 años impartiendo formación TIC, acreditado con **modelo RNT y currículums** (PCAP G2) | Docs. 3, 4, 5, 6 y 7 | Coordinación académica |
 | **Adscripción de medios**: los 17 docentes y el % de mujeres que ofrecimos en el sobre C (PCAP G4 + anexo 14) | Docs. 3, 5 y 6 | Coordinación académica |
 | **G4**: una persona en plantilla con título oficial de Pedagogía / CC. Educación / Magisterio / CAP / Máster de profesorado | Doc. 8: título + RNT | Gerencia |
 | Compromiso art. 75.2 LCSP (solo si recurrimos a capacidades de otras entidades) | Cubierto por los convenios del doc. 6 | — |
 
-### Seguro de RC: presupuesto de Allianz (06/10/2026)
-Presupuesto de CSC Mediadors (agente vinculado de Allianz), "RC PYME":
+### Seguro de RC: ✅ póliza contratada (Helvetia, 08/10/2026)
 
-| Concepto | Presupuesto | ¿Cumple? |
+| Concepto | Póliza Helvetia n.º **E2 R18 0000733** | ¿Cumple? |
 |---|---|---|
-| Garantía RC **profesional**, límite por siniestro | 1.588.680,00 € (por anualidad, 4.766.040,00 €) | ✅ Igual al valor estimado del lote 1 |
-| Límite global por siniestro | 1.588.680,00 € | ✅ |
-| Franquicia | 200 € | ✅ Sin incidencia |
-| Ámbito | España y Andorra | ✅ |
-| Renovable | Sí, anual | ✅ (y además firmamos la DR de renovación, doc. 02) |
-| Prima | 922,97 €/año | — |
-| **Vigencia** | **Desde 06/10/2026** | ⚠️ Ver abajo |
-| **Descripción del riesgo** | "Formación Profesional de grado medio · 500 alumnos" | ❌ Hay que corregirla |
+| Aseguradora | Caja de Seguros Reunidos, Compañía de Seguros y Reaseguros, SA (Helvetia Seguros). Mediador: Segurseguros Mediación, SL (Calafell) | — |
+| Tomador y asegurado | Multimedia Tarragona, SL · B43492784 · C. Joana Jugan, 2, 43002 Tarragona | ✅ |
+| **RC profesional**, por siniestro | **1.588.680,00 €** (también por periodo) | ✅ Igual al valor estimado del lote 1 |
+| Sublímite por víctima | 150.000 € | ⚠️ El PCAP no dice nada de sublímites; es habitual y no debería ser un problema |
+| Límite por anualidad | 1.588.680,00 € | ✅ |
+| Actividad asegurada | "Acord marc EAPC-2026-53, lot 1": formación para el empleo, formación continua y formación para la Administración pública, presencial, en línea síncrona y asíncrona | ✅ Perfecto |
+| Base de tarificación | 2.000 alumnos · ámbito nacional | ✅ |
+| Vigencia | **08/10/2026 – 08/10/2027**, anual prorrogable | ⚠️ No cubre junio de 2026 (lo explicamos en el escrito con el anexo 4.f) |
+| Franquicia | 150 € | ✅ |
+| Recibo | N.º 7610095931 · **3.500,17 €** (prima 3.236,41 € + impuestos) | ⚠️ **Pagarlo ya** y guardar el justificante |
 
-**1. Vigencia: el riesgo principal.** El PCAP (G1) pide un seguro "vigent fins a la fi del termini de presentació d'ofertes", y la solvencia debe existir en la fecha final de presentación de ofertas (cl. 9.1). Una póliza con efecto **06/10/2026** no cubre junio de 2026. Lo hemos planteado así en el escrito:
-- Decimos con claridad la fecha de efecto real. **Nunca hay que pedir que se ponga una fecha de efecto anterior** a la de contratación.
-- Nos apoyamos en el compromiso que firmamos en el **sobre A** (anexo 4 del PCAP, apartado f): "en cas de resultar adjudicatari es compromet a disposar d'una assegurança d'indemnització per riscos professionals per l'import de la solvència requerida". El propio pliego admitía, por tanto, contratarla al resultar adjudicatarios.
-- **Si en junio de 2026 teníamos alguna póliza de RC en vigor**, aunque fuera con menos capital, conviene aportar también su certificado. Así se ve que había cobertura en esa fecha y que ahora se ha ampliado. Decídmelo y lo añado al escrito.
-- Si la Mesa no lo acepta, lo normal es que pida subsanación (3 días naturales). El escrito ya la solicita.
+**Qué se sube al espacio "Solvència econòmica":** el **certificado de Helvetia** (2 páginas, firmado) como doc. 1, la **DR de renovación** (doc. 02) y la portada (doc. 05). El recibo no hace falta subirlo, pero si se adjunta junto con el **justificante de pago**, mejor: demuestra que la póliza está en vigor (si no se paga la primera prima, la aseguradora puede desentenderse del siniestro).
 
-**2. Descripción del riesgo: hay que corregirla antes de emitir la póliza.** Si la actividad asegurada es "FP de grado medio", la aseguradora podría negar la cobertura de un siniestro en un curso de la EAPC, y la Mesa podría ver que la póliza no cubre la actividad del contrato. Hay que pedir a la correduría:
-- **Actividad**: "Centre de formació: formació professional per a l'ocupació, formació contínua i formació per a l'Administració pública, en modalitat presencial, en línia síncrona (videoconferència) i en línia asíncrona (entorn virtual d'aprenentatge)".
-- **Número de alumnos realista** (preguntar antes a la correduría si Allianz cuenta los **alumnos al año** o los **simultáneos**). Cálculo para el lote 1 (PCAP, apartado B1): **3.000 h/año** de docencia presencial o síncrona (más 2.000 h de tutoría asíncrona dentro de los cursos mixtos), con un máximo de 15 alumnos por curso. Con cursos de unos 15 h salen ~200 ediciones × 15 alumnos = **~3.000 alumnos/año** si ejecutáramos todo el lote. Como lo compartimos con Gesem, lo realista es **~1.500**. **Propuesta: declarar 3.000 alumnos/año por la EAPC + los alumnos anuales reales del resto de la actividad del centro** (certificados, ICIQ, Port, etc.; sacarlo de los datos del último año). Declarar de menos expone a que, en caso de siniestro, la aseguradora reduzca la indemnización en proporción a la prima no pagada.
+Los docs. 01, 02 y 05 ya tienen el número de póliza, la aseguradora y la fecha de efecto.
 
 **Póliza actual del centro (Occident, n.º 8-10.898.839-X): no sirve para este requisito.**
 
@@ -63,23 +58,7 @@ Presupuesto de CSC Mediadors (agente vinculado de Allianz), "RC PYME":
 
 Estaba vigente en junio, pero sin RC profesional y con una quinta parte del capital. **No recomiendo aportarla**: no acredita el requisito y deja aún más claro que en junio no lo cumplíamos.
 
-**⚠️ No se puede esperar a "ser ganadores" para contratar.** El requerimiento del 29/09 es precisamente el paso previo a la adjudicación (art. 150.2 LCSP): ya somos la empresa propuesta y la EAPC nos pide que **acreditemos ahora** que disponemos del seguro. Si el 14/10 no lo aportamos, se considera que **retiramos la oferta**, se pasa al siguiente licitador y se aplica una **penalidad de 13.239 €** (3 % del presupuesto, cl. 14.3). El compromiso del anexo 4.f ("en cas de resultar adjudicatari") se materializa justamente en este requerimiento. El seguro de Allianz cuesta 923 €/año.
-
-Para limitar el riesgo si al final no se adjudica, preguntar a la correduría:
-- si la póliza se puede **anular con devolución de la prima no consumida** en caso de no adjudicación; o
-- como alternativa, si Occident/PIB Group puede añadir a la póliza actual un **suplemento de RC profesional de 1.588.680 €** que cubra la formación fuera del local y en línea. Comparar el precio con el de Allianz.
-
-Una carta de la aseguradora que solo se comprometa a emitir la póliza "si resultamos adjudicatarios" **no es suficiente**: el G1 pide un certificado que acredite que **disponemos** del seguro.
-
-**3. Pasos con la correduría (urgente: el presupuesto es válido 15 días y nuestro plazo acaba el 14/10):**
-- [ ] Corregir la actividad y el número de alumnos, y pedir el presupuesto revisado.
-- [ ] Contratar, **emitir la póliza** y **pagar el primer recibo** antes del 9/10.
-- [ ] Pedir el **certificado de la aseguradora** con: tomador y asegurado Multimèdia Tarragona, SL (B43492784); número de póliza; garantía de **RC profesional** con límite por siniestro de 1.588.680 €; fecha de efecto y de vencimiento; renovación anual tácita; actividad asegurada; y, si es posible, referencia "Acord marc EAPC-2026-53, lot 1".
-- [ ] Guardar el recibo pagado (por si la Mesa lo pide).
-
-Cuando esté emitida, rellenar en los docs. 01, 02 y 05 el **número de póliza** y la **fecha de efecto** (marcados en amarillo).
-
-**Importe**: la carta del requerimiento dice 1.558.680,00 €, pero el PCAP y la tabla de la misma carta dicen 1.588.680,00 €. El presupuesto cubre 1.588.680,00 €, así que cumple las dos cifras. Lo dejamos dicho en el escrito.
+**Importe**: la carta del requerimiento dice 1.558.680,00 €, pero el PCAP y la tabla de la misma carta dicen 1.588.680,00 €. La póliza de Helvetia cubre 1.588.680,00 €, así que cumple las dos cifras. Lo dejamos dicho en el escrito.
 
 ## 2. Plazo
 
@@ -155,7 +134,8 @@ Algo útil que se ve en las plantillas: en **disposición de medios** la EAPC so
 ## 8. Checklist
 
 - [ ] Plazo: último día **14/10/2026**; objetivo interno, subirlo el 9/10 — *Gerencia*
-- [ ] Seguro Allianz: corregir la actividad y los alumnos, emitir la póliza, pagar y pedir el certificado (ver apartado 1) — *Gerencia*
+- [x] Seguro: póliza Helvetia E2 R18 0000733 emitida (08/10/2026) — *Gerencia*
+- [ ] Pagar el recibo 7610095931 (3.500,17 €) y guardar el justificante — *Gerencia*
 - [x] Póliza de RC en vigor en junio (Occident): revisada. **No cumple** (sin RC profesional, 300.000 €). No se aporta — *Gerencia*
 - [ ] Confirmar la fecha fin de presentación de ofertas (¿10/06/2026?) y recuperar la lista de docentes que usamos en la oferta — *Gerencia*
 - [ ] Descargar la RNT del último periodo liquidado (SILTRA / Sistema RED) — *Gerencia/gestoría*
