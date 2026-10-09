@@ -62,10 +62,25 @@ Estaba vigente en junio, pero sin RC profesional y con una quinta parte del capi
 
 ## 2. Plazo
 
-- Requerimiento recibido el **martes 29/09/2026**. Son **10 días hábiles** desde el día siguiente (sin sábados, domingos ni festivos; el lunes 12/10 es festivo nacional):
-  30/09 · 1/10 · 2/10 · 5/10 · 6/10 · 7/10 · 8/10 · 9/10 · 13/10 · **14/10**.
-- **Último día: miércoles 14 de octubre de 2026.** Objetivo interno: subirlo como muy tarde el **viernes 9/10**, para tener margen si falla la firma o el Sobre Digital.
-- Si la fecha de acceso que figura en e-NOTUM no es el 29/09, recalcular a partir de esa fecha.
+**Qué dice el requerimiento:** "10 **dies hàbils** des del següent al que rebeu aquest requeriment". Son días **hábiles**: no cuentan sábados, domingos ni festivos (el lunes 12/10 es festivo nacional).
+
+**Desde cuándo se cuenta (PCAP, cláusula 8.2, que aplica la DA 15.ª LCSP):**
+- desde la **fecha de envío del aviso** de e-NOTUM, **si ese mismo día** se publicó el acto en el **perfil de contratante** de la EAPC;
+- si no, desde la **recepción**, es decir, el día en que **accedimos o descargamos** la notificación en e-NOTUM.
+
+**Lo que sabemos:** el requerimiento lo firmó el subdirector el **lunes 28/09/2026 a las 15:11** (firma digital del PDF). Lo descargamos el **martes 29/09**.
+
+| Si el plazo empieza a contar… | Días hábiles | **Último día** |
+|---|---|---|
+| desde el **28/09** (envío del aviso el 28 + publicación ese día en el perfil) | 29/09 · 30/09 · 1/10 · 2/10 · 5/10 · 6/10 · 7/10 · 8/10 · 9/10 · 13/10 | **martes 13/10/2026** |
+| desde el **29/09** (recepción o descarga) | 30/09 · 1/10 · 2/10 · 5/10 · 6/10 · 7/10 · 8/10 · 9/10 · 13/10 · 14/10 | **miércoles 14/10/2026** |
+
+**Qué hay que comprobar:**
+1. En **e-NOTUM**: la fecha de **posada a disposició/enviament** del aviso y la fecha de **accés**.
+2. En el **perfil de contratante** (contractaciopublica.cat): si el 28/09 se publicó algo del expediente (proposta d'adjudicació, acta de la mesa…).
+
+**Mientras no esté confirmado, el límite es el MARTES 13/10/2026.** Como el lunes 12 es festivo, hay que presentarlo **hoy viernes 9/10 o, como muy tarde, la mañana del martes 13/10**. Si el aviso se envió y se recibió el 29/09, el límite real es el 14/10, pero no vale la pena arriesgarse por un día.
+
 - Si no se presenta a tiempo, se entiende que **retiramos la oferta** y se aplica una penalidad del 3 % del presupuesto base de licitación, IVA excluido (cláusula 14.3 PCAP): 3 % de 441.300 € = **13.239 €**.
 - Si la documentación tiene defectos subsanables, la Mesa da **3 días naturales** para corregirlos (cl. 14.3). El escrito ya pide expresamente este trámite.
 - Recomendación: subirlo todo **2 días hábiles antes** del final del plazo.
@@ -133,7 +148,7 @@ Algo útil que se ve en las plantillas: en **disposición de medios** la EAPC so
 
 ## 8. Checklist
 
-- [ ] Plazo: último día **14/10/2026**; objetivo interno, subirlo el 9/10 — *Gerencia*
+- [ ] Plazo: comprobar en e-NOTUM la fecha de envío y en el perfil de contratante si hubo publicación el 28/09. **Límite seguro: martes 13/10/2026** — *Gerencia*
 - [x] Seguro: póliza Helvetia E2 R18 0000733 emitida (08/10/2026) — *Gerencia*
 - [ ] Pagar el recibo 7610095931 (3.500,17 €) y guardar el justificante — *Gerencia*
 - [x] Póliza de RC en vigor en junio (Occident): revisada. **No cumple** (sin RC profesional, 300.000 €). No se aporta — *Gerencia*
