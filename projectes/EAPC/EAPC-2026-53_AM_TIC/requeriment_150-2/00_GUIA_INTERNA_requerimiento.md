@@ -16,6 +16,9 @@ Los campos en **amarillo** son los que hay que rellenar. Firmar todo con certifi
 
 ---
 
+> ✅ **PRESENTADO** el 14/10/2026 a las 12:05 en el Sobre Digital ("Se ha recibido la documentación"). El plazo oficial terminaba el **14/10/2026 a las 14:00** (según el propio Sobre Digital).
+> Siguientes pasos: vigilar e-NOTUM por si la Mesa pide subsanación (3 días naturales, cl. 14.3), pagar el recibo de Helvetia y guardar el justificante de presentación.
+
 ## 1. Qué nos piden y con qué lo cubrimos
 
 | Requisito (requerimiento / PCAP) | Documento | Quién lo consigue |
