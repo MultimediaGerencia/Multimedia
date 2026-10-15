@@ -80,4 +80,4 @@ Para la web, Facebook e Instagram, y como código QR en los dosieres:
 
 `https://wa.me/34601989689?text=Hola%2C%20vull%20informaci%C3%B3%20sobre%20els%20cursos`
 
-**[CONFIRMAR]** que el número de WhatsApp es el 601 989 689.
+Número de WhatsApp de empresa: **601 989 689** (confirmado por gerencia el 15/10/2026).

@@ -8,10 +8,10 @@ Marcas: **[CONFIRMAR]** = dato que debe confirmar el centro · **[FUENTE]** = da
 
 - **Multimèdia Tarragona**: centro de formación reglada y ocupacional, en activo desde 1996. La web dice «20 anys d'experiència» y conviene actualizarla a 30.
 - **Sedes**: Tarragona (C/ Joana Jugan 2, local 12, 43002) y Torredembarra («Multimèdia Formació», Pg. de l'Estació 10) **[CONFIRMAR si sigue activa]**.
-- **Contacto público**: 977 22 22 31 · 601 989 689 · info@multimediatarragona.com (según el dosier de empresa). Hay que confirmar si el 601 989 689 es el número de WhatsApp.
+- **Contacto público**: 977 22 22 31 · 601 989 689 · info@multimediatarragona.com (según el dosier de empresa). El **601 989 689** es el número de WhatsApp de empresa (confirmado por gerencia).
 - **Imagen de marca** (dosier): lema «Training people» y «Formació professional adaptada a les teves necessitats»; certificaciones ISO 9001:2015 e ISO 14001:2015; presencia en Instagram, X y Facebook.
 - **Horario de atención**: no está publicado **[CONFIRMAR]**.
-- **Número de WhatsApp de empresa**: **[CONFIRMAR]** cuál es, si está en la app WhatsApp Business y en qué móvil.
+- **Número de WhatsApp de empresa**: 601 989 689. **[CONFIRMAR]** si está en la app WhatsApp Business y en qué móvil.
 
 ### Oferta formativa
 
@@ -123,7 +123,8 @@ Pendiente de verificar: gratuidad y ayudas (transporte, conciliación), document
 
 ## 10. Lo que necesitamos del centro
 
-- [ ] Número de WhatsApp, móvil donde está y quién lo atiende hoy.
+- [x] Número de WhatsApp: 601 989 689.
+- [ ] Móvil donde está, si usa la app WhatsApp Business y quién lo atiende hoy.
 - [ ] Volumen aproximado de conversaciones al mes y franjas de más trabajo.
 - [ ] Horario de atención y calendario de festivos.
 - [ ] Oferta vigente 2026-2027 en una hoja (plantilla a preparar).
