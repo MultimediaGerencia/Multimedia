@@ -8,7 +8,8 @@ Marcas: **[CONFIRMAR]** = dato que debe confirmar el centro · **[FUENTE]** = da
 
 - **Multimèdia Tarragona**: centro de formación reglada y ocupacional, en activo desde 1996. La web dice «20 anys d'experiència» y conviene actualizarla a 30.
 - **Sedes**: Tarragona (C/ Joana Jugan 2, local 12, 43002) y Torredembarra («Multimèdia Formació», Pg. de l'Estació 10) **[CONFIRMAR si sigue activa]**.
-- **Contacto público**: 977 22 22 31 · info@multimediatarragona.com.
+- **Contacto público**: 977 22 22 31 · 601 989 689 · info@multimediatarragona.com (según el dosier de empresa). Hay que confirmar si el 601 989 689 es el número de WhatsApp.
+- **Imagen de marca** (dosier): lema «Training people» y «Formació professional adaptada a les teves necessitats»; certificaciones ISO 9001:2015 e ISO 14001:2015; presencia en Instagram, X y Facebook.
 - **Horario de atención**: no está publicado **[CONFIRMAR]**.
 - **Número de WhatsApp de empresa**: **[CONFIRMAR]** cuál es, si está en la app WhatsApp Business y en qué móvil.
 

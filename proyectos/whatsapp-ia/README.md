@@ -2,7 +2,7 @@
 
 Proyecto para automatizar al máximo el WhatsApp de empresa de Multimèdia Tarragona con un agente de IA: informar 24 horas, registrar interesados, dar citas, avisar al alumnado y pasar a una persona cuando haga falta.
 
-**Estado (15/10/2026):** estudio terminado. Pendiente de las decisiones del [documento 03, apartado 5](03-propuesta-y-hoja-de-ruta.md#5-decisiones-que-necesitamos).
+**Estado:** decidido el enfoque a medida con Claude Code. Fase 0 (preparación) en marcha: materiales en [fase-0/](fase-0/).
 
 ## Documentos
 
