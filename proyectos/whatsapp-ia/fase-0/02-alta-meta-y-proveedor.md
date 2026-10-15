@@ -58,4 +58,5 @@ La coexistencia solo se activa a través del registro guiado de un proveedor ofi
 - [ ] App WhatsApp Business actualizada (versión 2.24.17 o superior).
 - [ ] Número con uso activo en la app desde hace al menos 7 días.
 - [ ] Hacer una **copia de seguridad** de los chats antes del alta.
-- [ ] Saber qué dispositivos hay vinculados: se desvinculan y luego se pueden volver a vincular (WhatsApp para Windows no es compatible).
+- [x] Número 601 989 689 en WhatsApp Business, en el móvil de la oficina.
+- [ ] Ordenadores vinculados: al conectar se desvinculan. Después se pueden volver a vincular con **WhatsApp Web** (navegador). La app **WhatsApp para Windows** no es compatible con la coexistencia: si la usáis, cambiad a WhatsApp Web antes del alta.

@@ -11,7 +11,7 @@ Marcas: **[CONFIRMAR]** = dato que debe confirmar el centro · **[FUENTE]** = da
 - **Contacto público**: 977 22 22 31 · 601 989 689 · info@multimediatarragona.com (según el dosier de empresa). El **601 989 689** es el número de WhatsApp de empresa (confirmado por gerencia).
 - **Imagen de marca** (dosier): lema «Training people» y «Formació professional adaptada a les teves necessitats»; certificaciones ISO 9001:2015 e ISO 14001:2015; presencia en Instagram, X y Facebook.
 - **Horario de atención**: no está publicado **[CONFIRMAR]**.
-- **Número de WhatsApp de empresa**: 601 989 689. **[CONFIRMAR]** si está en la app WhatsApp Business y en qué móvil.
+- **Número de WhatsApp de empresa**: 601 989 689, en la app WhatsApp Business del móvil de la oficina, con ordenadores vinculados. **[CONFIRMAR]** si los ordenadores usan WhatsApp Web o la app de Windows.
 
 ### Oferta formativa
 
@@ -124,7 +124,8 @@ Pendiente de verificar: gratuidad y ayudas (transporte, conciliación), document
 ## 10. Lo que necesitamos del centro
 
 - [x] Número de WhatsApp: 601 989 689.
-- [ ] Móvil donde está, si usa la app WhatsApp Business y quién lo atiende hoy.
+- [x] Está en WhatsApp Business, en el móvil de la oficina, con ordenadores vinculados.
+- [ ] Quién lo atiende hoy y si los ordenadores usan WhatsApp Web o la app de Windows.
 - [ ] Volumen aproximado de conversaciones al mes y franjas de más trabajo.
 - [ ] Horario de atención y calendario de festivos.
 - [ ] Oferta vigente 2026-2027 en una hoja (plantilla a preparar).
