@@ -1,0 +1,4 @@
+# Caddy obtiene y renueva solo el certificado HTTPS (Let's Encrypt).
+__DOMINIO__ {
+	reverse_proxy 127.0.0.1:3000
+}

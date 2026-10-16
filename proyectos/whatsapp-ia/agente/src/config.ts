@@ -40,4 +40,6 @@ export const config = {
   // Flujo de Workflows de Teams que publica los avisos en el canal del equipo.
   teamsWebhookUrl: process.env.TEAMS_WEBHOOK_URL ?? "",
   puerto: entero(process.env.PUERTO, 3000),
+  // Solo escucha en el propio servidor: el acceso desde fuera pasa por Caddy (HTTPS).
+  host: process.env.HOST ?? "127.0.0.1",
 };

@@ -89,7 +89,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   const agente = montarAgente("agente.db");
   setInterval(() => agente.memoria.purgar(Date.now(), config.diasConservacion), 86_400_000).unref();
-  crearServidor(agente, clienteWhatsApp(config.whatsapp)).listen(config.puerto, () =>
+  crearServidor(agente, clienteWhatsApp(config.whatsapp)).listen(config.puerto, config.host, () =>
     console.log(`Agente escuchando en el puerto ${config.puerto}`),
   );
 }
