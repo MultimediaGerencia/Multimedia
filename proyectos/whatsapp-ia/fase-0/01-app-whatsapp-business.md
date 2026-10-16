@@ -12,7 +12,7 @@ Lo marcado **[COMPLETAR]** lo debe rellenar el centro. Los textos van primero en
 | Categoría | Educación / Centro de formación |
 | Descripción | Formació professional adaptada a les teves necessitats. Cursos per a persones aturades i ocupades, certificats professionals i formació per a empreses. Centre certificat ISO 9001 i ISO 14001. |
 | Dirección | C/ Joana Jugan 2, local 12, 43002 Tarragona |
-| Horario | **[COMPLETAR]** |
+| Horario | Lunes a jueves: 9:00-13:00 y 15:00-19:00 · Viernes: 9:00-15:00 · Sábado y domingo: cerrado |
 | Correo | info@multimediatarragona.com |
 | Web | https://www.multimediatarragona.com |
 | Redes | Instagram, X y Facebook **[COMPLETAR los enlaces]** |
@@ -27,10 +27,10 @@ Se envía a quien escribe por primera vez o tras 14 días sin escribir.
 
 ## 3. Mensaje de ausencia
 
-Se programa «fuera del horario comercial».
+Se programa «fuera del horario comercial». En la app, el horario se configura en el perfil de empresa: lunes a jueves en dos franjas (9-13 y 15-19) y viernes de 9 a 15. Así el mensaje también sale a mediodía, entre las 13 y las 15 h.
 
-> Ara som fora d'horari. Deixa'ns el teu missatge (nom i curs que t'interessa) i et respondrem el proper dia laborable a partir de les **[COMPLETAR]**.
-> Ahora estamos fuera de horario. Déjanos tu mensaje (nombre y curso que te interesa) y te responderemos el próximo día laborable a partir de las **[COMPLETAR]**.
+> Ara som fora d'horari. Deixa'ns el teu missatge (nom i curs que t'interessa) i et respondrem el proper dia laborable a partir de les 9 h. Horari: de dilluns a dijous de 9 a 13 h i de 15 a 19 h; divendres de 9 a 15 h.
+> Ahora estamos fuera de horario. Déjanos tu mensaje (nombre y curso que te interesa) y te responderemos el próximo día laborable a partir de las 9 h. Horario: de lunes a jueves de 9 a 13 h y de 15 a 19 h; viernes de 9 a 15 h.
 
 ## 4. Respuestas rápidas
 
@@ -38,7 +38,7 @@ Se escriben con «/» y el atajo. Las respuestas sobre cursos remiten siempre a 
 
 | Atajo | Texto (ca / es) |
 |---|---|
-| /on | Som al C/ Joana Jugan 2, local 12, 43002 Tarragona. Horari: [COMPLETAR]. / Estamos en C/ Joana Jugan 2, local 12, 43002 Tarragona. Horario: [COMPLETAR]. |
+| /on | Som al C/ Joana Jugan 2, local 12, 43002 Tarragona. Horari: de dilluns a dijous de 9 a 13 h i de 15 a 19 h; divendres de 9 a 15 h. / Estamos en C/ Joana Jugan 2, local 12, 43002 Tarragona. Horario: de lunes a jueves de 9 a 13 h y de 15 a 19 h; viernes de 9 a 15 h. |
 | /cursos | Aquests són els cursos oberts ara: [COMPLETAR enlace o lista]. Quin t'interessa? / Estos son los cursos abiertos ahora: [COMPLETAR]. ¿Cuál te interesa? |
 | /soc | Per als cursos del SOC per a persones aturades cal estar inscrit/a al SOC com a demandant d'ocupació abans de començar. Si encara no ho estàs, et podem orientar. / Para los cursos del SOC para personas desempleadas hay que estar inscrito/a en el SOC como demandante de empleo antes de empezar. Si aún no lo estás, te orientamos. |
 | /requisits | Els requisits depenen del nivell del curs. Digue'ns quin curs t'interessa i quins estudis tens, i el nostre equip t'ho confirma. / Los requisitos dependen del nivel del curso. Dinos qué curso te interesa y qué estudios tienes, y nuestro equipo te lo confirma. |
