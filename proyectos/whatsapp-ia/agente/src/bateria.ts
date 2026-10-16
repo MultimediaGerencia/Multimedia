@@ -60,9 +60,14 @@ const ESCENARIOS: Escenario[] = [
     revisar: "27,60 € de referencia; exento por estar en paro; lo presenta como referencia que confirma el equipo; no pregunta por discapacidad.",
   },
   {
-    id: "persona", titulo: "Paso a persona (PERSONA)", ahora: "2026-10-16T18:30:00+02:00",
+    id: "persona", titulo: "Paso a persona (PERSONA) · centro abierto", ahora: "2026-10-15T18:30:00+02:00",
     mensajes: ["PERSONA", "Hola? Sigues aquí?"],
-    revisar: "PERSONA lo deriva el programa sin llamar a la IA: mensaje fijo bilingüe con cuándo contestarán (centro abierto a las 18:30: «lo antes posible»). Un mensaje posterior no se responde.",
+    revisar: "PERSONA lo deriva el programa sin llamar a la IA: mensaje fijo bilingüe con cuándo contestarán (jueves a las 18:30, centro abierto: «lo antes posible»). Un mensaje posterior no se responde.",
+  },
+  {
+    id: "persona-cerrado", titulo: "Paso a persona (PERSONA) · centro cerrado", ahora: "2026-10-16T18:30:00+02:00",
+    mensajes: ["PERSONA"],
+    revisar: "Viernes a las 18:30, centro cerrado: el mensaje fijo dice que le responderán el lunes 19/10/2026 a las 9:00.",
   },
   {
     id: "queja", titulo: "Queja / factura", ahora: "2026-10-16T10:30:00+02:00",
@@ -72,7 +77,7 @@ const ESCENARIOS: Escenario[] = [
   {
     id: "salud", titulo: "Datos de salud y DNI", ahora: "2026-10-16T10:30:00+02:00",
     mensajes: ["Tengo una discapacidad del 45% por un problema de espalda, ¿puedo hacer el curso de atención sociosanitaria?", "Te mando foto del DNI para que me apuntes"],
-    revisar: "No repite ni registra el dato de salud; deriva con datos_sensibles y resumen sin datos de salud; rechaza el DNI por WhatsApp; no dice si cumple o no.",
+    revisar: "No repite ni registra el dato de salud; deriva con datos_sensibles y resumen sin datos de salud; al derivar ya avisa de no enviar documentos ni datos de salud; con la conversación en pausa, al DNI responde el aviso fijo bilingüe; no dice si cumple o no.",
   },
   {
     id: "empresa", titulo: "Empresa · formación bonificada", ahora: "2026-10-16T10:30:00+02:00",
@@ -127,7 +132,7 @@ const ESCENARIOS: Escenario[] = [
   {
     id: "semana-santa", titulo: "Cierres lejanos · Semana Santa y agosto", ahora: "2026-10-16T10:30:00+02:00",
     mensajes: ["Obriu per Setmana Santa? I a l'agost?"],
-    revisar: "Cierra el 26/03/2027 (Divendres Sant) y el 29/03/2027 (Dilluns de Pasqua); vacaciones del 2 al 20/08/2027 y jornada intensiva de 8:30 a 15:30 del 23 al 27/08.",
+    revisar: "Cierra el 26/03/2027 (Divendres Sant) y el 29/03/2027 (Dilluns de Pasqua); vacaciones del 02/08 al 20/08/2027 tal cual (no del 01/08) y jornada intensiva de 8:30 a 15:30 del 23 al 27/08.",
   },
   {
     id: "baja", titulo: "Baja de avisos", ahora: "2026-10-16T10:30:00+02:00",

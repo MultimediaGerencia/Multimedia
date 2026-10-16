@@ -104,7 +104,10 @@ export async function ejecutarHerramienta(nombre: string, entrada: unknown, ctx:
       ctx.memoria.registrarDerivacion({ contacto: ctx.contacto, motivo: String(e.motivo ?? "otro"), resumen, urgente: e.urgente === true }, ctx.ahora);
       ctx.memoria.pausar(ctx.contacto, ctx.ahora + ctx.horasPausaHumano * 3_600_000);
       await ctx.avisarEquipo(`${e.urgente === true ? "URGENTE · " : ""}Conversación derivada (${e.motivo}) · ${ctx.memoria.referencia(ctx.contacto)}: ${resumen}`);
-      return "Derivado. El equipo continuará la conversación; despídete indicando cuándo le contestarán.";
+      const avisoDatos = e.motivo === "datos_sensibles"
+        ? " Incluye también, en su idioma, que no envíe por WhatsApp documentos de identidad (DNI, NIE, pasaporte) ni más datos de salud, y que el equipo le indicará cómo hacerlo de forma segura."
+        : "";
+      return `Derivado. El equipo continuará la conversación; despídete indicando cuándo le contestarán.${avisoDatos}`;
     }
     case "instrucciones_pago_actic": {
       const nivel = e.nivel === "avanzado" ? "avanzado" : e.nivel === "medio" ? "medio" : undefined;

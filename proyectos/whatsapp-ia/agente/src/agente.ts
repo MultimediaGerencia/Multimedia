@@ -46,6 +46,12 @@ function cuandoContestan(op: OpcionesAgente, ahora: number): string {
   return `Ara el centre és tancat: et respondrà ${ca}. / Ahora el centro está cerrado: te responderá ${es}.`;
 }
 
+/** Mensaje que menciona documentos de identidad o de salud: aunque la conversación esté en pausa, se avisa de no enviarlos. */
+export const MENCIONA_DOCUMENTOS = /\b(dni|nie|pasaporte|passaport|documento de identidad|document d'identitat|tarjeta sanitaria|targeta sanit[àa]ria|informe m[ée]dico|informe m[èe]dic|certificado de discapacidad|certificat de discapacitat)\b/i;
+
+export const AVISO_DOCUMENTOS =
+  "Si us plau, no enviïs documents d'identitat ni dades de salut per WhatsApp: l'equip t'indicarà com fer-ho de manera segura. / Por favor, no envíes documentos de identidad ni datos de salud por WhatsApp: el equipo te indicará cómo hacerlo de forma segura.";
+
 const MENSAJE_ERROR =
   "Ara mateix no puc respondre. Una persona de l'equip et contestarà com més aviat millor. / Ahora mismo no puedo responder. Una persona del equipo te contestará lo antes posible.";
 
@@ -81,7 +87,10 @@ export async function responder(op: OpcionesAgente, entrada: Entrada): Promise<s
   const contacto = entrada.contacto;
   memoria.asegurarContacto(contacto, ahora, entrada.telefono, entrada.nombrePerfil);
   const nuevo = memoria.necesitaAviso(contacto);
-  if (memoria.estaPausado(contacto, ahora)) return null;
+  if (memoria.estaPausado(contacto, ahora)) {
+    // El equipo lleva la conversación, pero el aviso de no enviar documentos no puede esperar.
+    return MENCIONA_DOCUMENTOS.test(entrada.texto) ? AVISO_DOCUMENTOS : null;
+  }
 
   const sesion = memoria.sesionActual(contacto, ahora, op.horasSesion);
 

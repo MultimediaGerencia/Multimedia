@@ -41,6 +41,8 @@ test("las instrucciones marcan lo pendiente como previsto y son estables", () =>
   assert.equal(instrucciones(cursos, "https://x"), instrucciones(cursos, "https://x"));
   assert.doesNotMatch(instrucciones(cursos, "https://x"), /\d{2}:\d{2}:\d{2}/);
   assert.match(instrucciones(cursos, "https://x"), /Nivel medio: 109 €\. Nivel avanzado: 129 €/);
+  assert.match(instrucciones(cursos, "https://x"), /«en línia» \(nunca «en línea»\)/);
+  assert.match(instrucciones(cursos, "https://x"), /cópialas exactamente como aparecen en esta lista/);
   assert.match(instrucciones(cursos, "https://x"), /nivel 2 \(medio\) 27,60 €/);
 });
 

@@ -4,7 +4,7 @@ import crypto from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type Anthropic from "@anthropic-ai/sdk";
-import { motivoError, PIDE_PERSONA, responder, type CrearMensaje, type OpcionesAgente } from "../src/agente.ts";
+import { AVISO_DOCUMENTOS, motivoError, PIDE_PERSONA, responder, type CrearMensaje, type OpcionesAgente } from "../src/agente.ts";
 import { cargarCalendario } from "../src/calendario.ts";
 import { Memoria } from "../src/memoria.ts";
 import { procesarEvento } from "../src/servidor.ts";
@@ -87,6 +87,20 @@ test("al derivar, el agente se aparta en los siguientes mensajes", async () => {
   const op = agente(m.crear);
   assert.match((await responder(op, { contacto: "ES.3", texto: "Vull parlar amb algú del centre", ahora }))!, /equip/);
   assert.equal(await responder(op, { contacto: "ES.3", texto: "Hola?", ahora }), null);
+  assert.equal(m.peticiones.length, 2);
+});
+
+test("datos sensibles: al derivar pide avisar de no enviar documentos y, en pausa, avisa sin llamar al modelo", async () => {
+  const m = modeloFalso([
+    respuesta([{ type: "tool_use", id: "t1", name: "derivar_a_persona", input: { motivo: "datos_sensibles", resumen: "Situación personal a tratar en confidencialidad", urgente: false } }], "tool_use"),
+    respuesta([{ type: "text", text: "Ho veurà l'equip." }], "end_turn"),
+  ]);
+  const op = agente(m.crear);
+  await responder(op, { contacto: "ES.10", texto: "Tinc una situació personal delicada", ahora });
+  const resultado = (m.peticiones[1].messages.at(-1)!.content as Anthropic.Beta.BetaToolResultBlockParam[])[0].content;
+  assert.match(String(resultado), /no envíe por WhatsApp documentos de identidad/);
+  assert.equal(await responder(op, { contacto: "ES.10", texto: "Te mando foto del DNI para que me apuntes", ahora }), AVISO_DOCUMENTOS);
+  assert.equal(await responder(op, { contacto: "ES.10", texto: "Gràcies", ahora }), null);
   assert.equal(m.peticiones.length, 2);
 });
 
