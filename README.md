@@ -10,6 +10,10 @@ Espacio para guardar y versionar los materiales y herramientas del equipo:
 - Documentación de proyectos con clientes (EAPC, ICIQ, Port de Tarragona, etc.).
 - Plantillas, guías internas y recursos de soporte pedagógico.
 
+## Proyectos
+
+- [WhatsApp con IA](proyectos/whatsapp-ia/): automatización del WhatsApp de empresa con un agente de IA. Estudio y propuesta (octubre de 2026).
+
 ## Protección de datos
 
 Este repositorio **no debe contener datos personales** de alumnado, docentes ni clientes, ni datos de categorías especiales (art. 9 RGPD). Cuando sea necesario trabajar con listados o encuestas, usar datos seudonimizados.

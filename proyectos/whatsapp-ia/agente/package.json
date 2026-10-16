@@ -1,0 +1,23 @@
+{
+  "name": "agente-whatsapp-multimedia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agente de IA para el WhatsApp de empresa de Multimèdia Tarragona",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "simulador": "node --disable-warning=ExperimentalWarning src/simulador.ts",
+    "servidor": "node --disable-warning=ExperimentalWarning src/servidor.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test \"tests/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  }
+}
