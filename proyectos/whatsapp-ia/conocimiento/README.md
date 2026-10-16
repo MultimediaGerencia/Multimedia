@@ -45,6 +45,19 @@ El centro busca la empresa de prácticas para cada alumno y se compromete a que 
 
 El agente lo presenta como un punto fuerte, con esta precisión: es un **compromiso del centro sobre el conjunto del grupo**, no una garantía de contrato para cada persona. Ejemplo: «Inclou pràctiques en empresa i el centre es compromet que almenys el 80 % del grup aconsegueixi feina, sovint a la mateixa empresa de pràctiques».
 
+## Cursos ACTIC (confirmado por gerencia)
+
+| | Nivel medio | Nivel avanzado |
+|---|---|---|
+| Precio | 109 € | 129 € |
+| IVA | Exento (formación) | Exento (formación) |
+
+- **Modalidad:** en línea, en el Moodle del centro. Se puede empezar cualquier día; al pagar se da acceso a la plataforma. También se hacen en formato privado o presencial, con precio a consultar.
+- **Examen:** Multimèdia es centro formador y examinador. Tras el curso, el alumno elige la fecha y solicita la plaza con al menos 15 días de antelación. Se examina en Torredembarra y paga la tasa de examen a la Generalitat.
+- **Cómo actúa el agente:** informa, registra al interesado y lo pasa al equipo para el pago y el acceso.
+
+Pendiente: importe de la tasa de examen, duración del acceso al Moodle, formas de pago y precio del formato privado.
+
 ## Calendario
 
 Horario, días de cierre de 2026 y 2027 e inicio de los cursos: [calendario-centro.md](calendario-centro.md).

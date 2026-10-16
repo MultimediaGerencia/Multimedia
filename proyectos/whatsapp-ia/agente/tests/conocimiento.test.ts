@@ -39,6 +39,7 @@ test("las instrucciones marcan lo pendiente como previsto y son estables", () =>
   // Sin fecha ni hora dentro: si cambiaran en cada mensaje, la caché no funcionaría
   assert.equal(instrucciones(cursos, "https://x"), instrucciones(cursos, "https://x"));
   assert.doesNotMatch(instrucciones(cursos, "https://x"), /\d{2}:\d{2}:\d{2}/);
+  assert.match(instrucciones(cursos, "https://x"), /Nivel medio: 109 €\. Nivel avanzado: 129 €/);
 });
 
 test("la tarjeta de Teams lleva el texto y marca los urgentes", () => {
