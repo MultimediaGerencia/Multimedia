@@ -37,7 +37,7 @@ Esto sigue tu indicación: lo pendiente se puede publicitar hasta que haya resol
 Según la captura del calendario de noviembre de 2026:
 
 - **«Eines coaching 1»** (programa PIMEC): 6 sesiones, los días 11, 13, 16, 18, 20 y 23 de noviembre de 2026, en Torredembarra. Es el último curso que empieza este año.
-- **[Confirmar]** horario y plazas libres.
+- Horario: de 15:00 a 20:00. **15 plazas disponibles.** El agente puede anunciarlo y apuntar interesados.
 
 ## Forma i Contracta: cómo explicarlo
 
@@ -51,4 +51,4 @@ Horario, días de cierre de 2026 y 2027 e inicio de los cursos: [calendario-cent
 
 ## Preguntas para gerencia y coordinación
 
-Ninguna pendiente sobre la oferta. Faltan horario y plazas libres de «Eines coaching 1».
+Ninguna pendiente sobre la oferta subvencionada.
