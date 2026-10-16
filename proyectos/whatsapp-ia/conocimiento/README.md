@@ -10,7 +10,7 @@ Archivo: [oferta-2026-27.csv](oferta-2026-27.csv) (30 cursos, separador «;»). 
 |---|---|---|---|---|
 | PIMEC | Consorci per a la Formació Contínua (los cursos los concede a PIMEC; Multimèdia los imparte para PIMEC) | Persones treballadores (prioritari; també poden haver-hi persones aturades) | **Aprobado** | 16 |
 | Certificado profesional ADGG0208 (nivel 2, grado C) | Consorci per a la Formació Contínua | Persones treballadores | Pendiente de resolución | ADGG0208 + PRL básico |
-| Forma i Contracta | SOC | Persones aturades | Pendiente de resolución | ADGG0208 + PRL, derechos laborales, igualdad, ACTIC. Incluye prácticas en empresa y compromiso de inserción (ver abajo) |
+| Forma i Contracta | SOC | Persones aturades | Pendiente de resolución | Un único programa: ADGG0208 (acción principal, la mayor parte de las horas) + básico de PRL (FCOS02) + módulos cortos de derechos y deberes laborales, igualdad de género y medio ambiente + prácticas en empresa. Compromiso de inserción (ver abajo) |
 | FOAP | SOC | Persones aturades | Pendiente de resolución (probablemente se apruebe una parte) | ADGD0308, ADGG0508, IFCD0110, SSCS0208 (2 grupos), ADGG0408, FCOV24 |
 
 ## Cómo debe usar el agente el campo `estado`
@@ -61,6 +61,7 @@ El agente lo presenta como un punto fuerte, con esta precisión: es un **comprom
 - **Examen:** Multimèdia es centro formador y examinador. Tras el curso, el alumno elige la fecha y solicita la plaza con al menos 15 días de antelación. Se examina en Torredembarra y paga la tasa de examen a la Generalitat.
 - **Contenido del curso:** temas por competencias ACTIC con vídeo, material digital y tests que simulan la plataforma del examen. Tutorías personales por videoconferencia bajo demanda y consultas por correo en cualquier momento.
 - **Cómo actúa el agente:** informa, registra al interesado y lo pasa al equipo para el pago y el acceso.
+- **Según el nivel (confirmado por gerencia):** para el nivel **básico** no hay curso en línea; se ofrecen los ACTIC básicos de PIMEC (FCOI18 y FCOI15), presenciales y para personas trabajadoras. Para **medio o avanzado**, la única opción es el curso en línea de pago.
 
 ### Tasas de examen de la Generalitat (facilitadas por gerencia el 16/10/2026)
 

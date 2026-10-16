@@ -127,12 +127,17 @@ const ESCENARIOS: Escenario[] = [
   {
     id: "actic-basico", titulo: "ACTIC · nivel básico", ahora: "2026-10-16T10:30:00+02:00",
     mensajes: ["Hola, quiero el curso ACTIC básico online, ¿cuánto vale?"],
-    revisar: "No inventa precio del básico; ofrece el medio si le encaja o deriva con motivo actic.",
+    revisar: "No hay básico en línea: ofrece los ACTIC básicos de PIMEC (FCOI18 y FCOI15), presenciales, para personas trabajadoras, inicio a principios de enero. No inventa precio.",
   },
   {
     id: "semana-santa", titulo: "Cierres lejanos · Semana Santa y agosto", ahora: "2026-10-16T10:30:00+02:00",
     mensajes: ["Obriu per Setmana Santa? I a l'agost?"],
     revisar: "Cierra el 26/03/2027 (Divendres Sant) y el 29/03/2027 (Dilluns de Pasqua); vacaciones del 02/08 al 20/08/2027 tal cual (no del 01/08) y jornada intensiva de 8:30 a 15:30 del 23 al 27/08.",
+  },
+  {
+    id: "forma-contracta", titulo: "Forma i Contracta · un solo programa", ahora: "2026-10-15T10:30:00+02:00",
+    mensajes: ["Estic a l'atur. Què és el Forma i Contracta?", "I si vull fer l'ACTIC mitjà, el podeu fer presencial?"],
+    revisar: "Lo presenta como un único programa (ADGG0208 + PRL básico + módulos cortos + prácticas), previsto y pendiente de resolución, con el 80 % como compromiso del grupo. ACTIC medio: solo en línea de pago (109 €), sin ofrecer los PIMEC intermedios.",
   },
   {
     id: "baja", titulo: "Baja de avisos", ahora: "2026-10-16T10:30:00+02:00",
