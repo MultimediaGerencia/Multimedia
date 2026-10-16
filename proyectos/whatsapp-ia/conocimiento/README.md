@@ -4,7 +4,7 @@
 
 Fuente: hoja interna «FORMACIONS 26-27 PROVISIONAL» (actualizada el 02/10/2026), entregada por gerencia el 16/10/2026. De ella **solo se han extraído datos de los cursos**. El seguimiento de docentes (nombres, teléfonos y tarifas) son datos personales y no entran en el repositorio ni en el agente.
 
-Archivo: [oferta-2026-27.csv](oferta-2026-27.csv) (34 filas, separador «;»).
+Archivo: [oferta-2026-27.csv](oferta-2026-27.csv) (30 cursos, separador «;»). Se excluyen las filas ocultas de la hoja (51-54, módulos de estética IMPE0110, no solicitados).
 
 | Programa | Organismo | Colectivo | Estado | Cursos |
 |---|---|---|---|---|
@@ -12,7 +12,6 @@ Archivo: [oferta-2026-27.csv](oferta-2026-27.csv) (34 filas, separador «;»).
 | Certificado profesional ADGG0208 (nivel 2, grado C) | Consorci per a la Formació Contínua | Persones treballadores | Pendiente de resolución | ADGG0208 + PRL básico |
 | Forma i Contracta | SOC | Persones aturades | Pendiente de resolución | ADGG0208 + PRL, derechos laborales, igualdad, ACTIC. Incluye prácticas en empresa y compromiso de inserción (ver abajo) |
 | FOAP | SOC | Persones aturades | Pendiente de resolución (probablemente se apruebe una parte) | ADGD0308, ADGG0508, IFCD0110, SSCS0208 (2 grupos), ADGG0408, FCOV24 |
-| Mòduls IMPE0110 (estética) | Consorci | Persones treballadores | **Sin confirmar** (no lo mencionaste) | 4 módulos |
 
 ## Cómo debe usar el agente el campo `estado`
 
@@ -20,14 +19,13 @@ Archivo: [oferta-2026-27.csv](oferta-2026-27.csv) (34 filas, separador «;»).
 |---|---|---|
 | `aprobado` | Que el curso está previsto y aprobado, y explicar el colectivo, el nivel y las horas. Ofrecer apuntarse a la lista de interesados y dar cita | Fechas, horario o sede mientras esas columnas estén vacías |
 | `pendiente_resolucion` | Que es un curso **previsto, pendiente de la resolución del organismo**, y ofrecer apuntarse a la **lista de espera** para avisar cuando se confirme (aviso solicitado por la persona) | Que se hará seguro, fechas o plazas |
-| `sin_confirmar` | Nada. No lo menciona hasta que gerencia lo confirme | — |
 
 Esto sigue tu indicación: lo pendiente se puede publicitar hasta que haya resolución, siempre como «previsto».
 
 ## Incidencias detectadas en la hoja (para revisar)
 
 1. **Faltan fechas concretas, horario y sede.** Confirmado por gerencia: todo es **presencial** y empieza a **principios de enero de 2027**. Mientras no haya fechas concretas, el agente dirá «inicio previsto a principios de enero».
-2. **Enlaces cambiados en PIMEC.** En 11 de los 16 cursos, la columna «LINK PROGRAMA» apunta a la ficha de otro curso (por ejemplo, Biomagnetisme → ficha de Java Back End). Se ha usado la columna «PROGRAMA», que sí coincide con cada curso.
+2. **Enlaces de PIMEC.** La columna J («LINK PROGRAMA», oculta) apunta a fichas de otros cursos. Se ha usado la columna «PROGRAMA», que sí coincide con cada curso.
 3. **Horas de los certificados FOAP.** La hoja indica ADGD0308 660 + 220, ADGG0508 352 + 88, IFCD0110 480 + 80 y SSCS0208 337 + 112,5. Hay que confirmar si la segunda cifra son prácticas y cuál es el total oficial.
 4. **ADGG0408 y FCOV24 (FOAP), y las acciones de Forma i Contracta**, no tienen horas ni nivel en la hoja.
 5. **El PRL básico (FCOS02) del bloque del Consorci** figura con organismo SOC.
@@ -53,4 +51,4 @@ Horario, días de cierre de 2026 y 2027 e inicio de los cursos: [calendario-cent
 
 ## Preguntas para gerencia y coordinación
 
-1. ¿Los 4 módulos de estética IMPE0110 (Consorci, filas 51 a 54 de la hoja) están solicitados? ¿Se pueden anunciar?
+Ninguna pendiente sobre la oferta. Faltan horario y plazas libres de «Eines coaching 1».

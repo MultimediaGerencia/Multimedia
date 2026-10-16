@@ -11,7 +11,7 @@ Lo marcado **[COMPLETAR]** lo debe rellenar el centro. Los textos van primero en
 | Nombre | Multimèdia Tarragona |
 | Categoría | Educación / Centro de formación |
 | Descripción | Formació professional adaptada a les teves necessitats. Cursos per a persones aturades i ocupades, certificats professionals i formació per a empreses. Centre certificat ISO 9001 i ISO 14001. |
-| Dirección | Pg. de l'Estació 10, baixos, 43830 Torredembarra **[CONFIRMAR dirección exacta]** |
+| Dirección | Pg. de l'Estació 10, baixos, 43830 Torredembarra |
 | Horario | Lunes a jueves: 9:00-13:00 y 15:00-19:00 · Viernes: 9:00-15:00 · Sábado y domingo: cerrado |
 | Correo | info@multimediatarragona.com |
 | Web | https://www.multimediatarragona.com |
