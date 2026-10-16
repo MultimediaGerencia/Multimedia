@@ -40,6 +40,7 @@ test("las instrucciones marcan lo pendiente como previsto y son estables", () =>
   assert.equal(instrucciones(cursos, "https://x"), instrucciones(cursos, "https://x"));
   assert.doesNotMatch(instrucciones(cursos, "https://x"), /\d{2}:\d{2}:\d{2}/);
   assert.match(instrucciones(cursos, "https://x"), /Nivel medio: 109 €\. Nivel avanzado: 129 €/);
+  assert.match(instrucciones(cursos, "https://x"), /nivel 2 \(medio\) 27,60 €/);
 });
 
 test("la tarjeta de Teams lleva el texto y marca los urgentes", () => {

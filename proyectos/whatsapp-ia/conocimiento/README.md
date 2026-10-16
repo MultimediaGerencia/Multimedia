@@ -54,9 +54,26 @@ El agente lo presenta como un punto fuerte, con esta precisión: es un **comprom
 
 - **Modalidad:** en línea, en el Moodle del centro. Se puede empezar cualquier día; al pagar se da acceso a la plataforma. También se hacen en formato privado o presencial, con precio a consultar.
 - **Examen:** Multimèdia es centro formador y examinador. Tras el curso, el alumno elige la fecha y solicita la plaza con al menos 15 días de antelación. Se examina en Torredembarra y paga la tasa de examen a la Generalitat.
+- **Contenido del curso:** temas por competencias ACTIC con vídeo, material digital y tests que simulan la plataforma del examen. Tutorías personales por videoconferencia bajo demanda y consultas por correo en cualquier momento.
 - **Cómo actúa el agente:** informa, registra al interesado y lo pasa al equipo para el pago y el acceso.
 
-Pendiente: importe de la tasa de examen, duración del acceso al Moodle, formas de pago y precio del formato privado.
+### Tasas de examen de la Generalitat (facilitadas por gerencia el 16/10/2026)
+
+| Nivel | Tasa |
+|---|---|
+| 1 · Básico | 20,75 € |
+| 2 · Medio | 27,60 € |
+| 3 · Avanzado | 34,45 € |
+
+- **Exención total:** personas en paro, jubiladas, con discapacidad ≥ 33 % y alumnado de 4.º de ESO (en curso o acabado el año de la solicitud).
+- **Bonificación del 30 %:** familias numerosas o monoparentales de categoría general (p. ej., 14,53 € en el nivel básico).
+- **Bonificación del 50 %:** familias numerosas o monoparentales de categoría especial (p. ej., 10,38 € en el nivel básico).
+- **10 % adicional** si la solicitud se presenta por vía electrónica.
+- **Plazos:** solicitud en cualquier momento, un mes para pagar y tres meses desde el pago para hacer la prueba.
+
+**[VERIFICAR antes de la puesta en marcha]** Estos importes deben cotejarse con la fuente oficial de la Generalitat (web de ACTIC o la ley de tasas vigente), porque se actualizan cada año. El agente los presenta como importes de referencia.
+
+Pendiente: duración del acceso al Moodle, formas de pago y precio del formato privado.
 
 ## Calendario
 
