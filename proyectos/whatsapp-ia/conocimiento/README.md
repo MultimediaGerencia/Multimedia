@@ -52,7 +52,9 @@ El agente lo presenta como un punto fuerte, con esta precisión: es un **comprom
 | Precio | 109 € | 129 € |
 | IVA | Exento (formación) | Exento (formación) |
 
-- **Modalidad:** en línea, en el Moodle del centro. Se puede empezar cualquier día; al pagar se da acceso a la plataforma. También se hacen en formato privado o presencial, con precio a consultar.
+- **Modalidad:** solo en línea, en el Moodle del centro. No se ofrecen presenciales porque la oferta subvencionada ya incluye contenidos ACTIC y así se amortiza el curso en línea.
+- **Acceso:** se puede empezar cualquier día. Al pagar se da acceso durante un mes y después el alumno se presenta al examen. Si suspende, se renueva gratis un mes más (los 30 días que exige la Generalitat antes de repetir).
+- **Pago:** transferencia bancaria o en efectivo en Torredembarra.
 - **Examen:** Multimèdia es centro formador y examinador. Tras el curso, el alumno elige la fecha y solicita la plaza con al menos 15 días de antelación. Se examina en Torredembarra y paga la tasa de examen a la Generalitat.
 - **Contenido del curso:** temas por competencias ACTIC con vídeo, material digital y tests que simulan la plataforma del examen. Tutorías personales por videoconferencia bajo demanda y consultas por correo en cualquier momento.
 - **Cómo actúa el agente:** informa, registra al interesado y lo pasa al equipo para el pago y el acceso.
@@ -73,7 +75,7 @@ El agente lo presenta como un punto fuerte, con esta precisión: es un **comprom
 
 **[VERIFICAR antes de la puesta en marcha]** Estos importes deben cotejarse con la fuente oficial de la Generalitat (web de ACTIC o la ley de tasas vigente), porque se actualizan cada año. El agente los presenta como importes de referencia.
 
-Pendiente: duración del acceso al Moodle, formas de pago y precio del formato privado.
+Sin pendientes, salvo verificar las tasas oficiales.
 
 ## Calendario
 
