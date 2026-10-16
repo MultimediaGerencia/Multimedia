@@ -1,0 +1,22 @@
+[Unit]
+Description=Agente de IA del WhatsApp de Multimèdia Tarragona
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=agente
+Group=agente
+WorkingDirectory=/opt/agente-whatsapp/agente
+EnvironmentFile=/etc/agente-whatsapp.env
+ExecStart=/usr/bin/node --disable-warning=ExperimentalWarning src/servidor.ts
+Restart=always
+RestartSec=5
+# Aislamiento: solo puede escribir en su carpeta de datos
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/agente-whatsapp
+
+[Install]
+WantedBy=multi-user.target

@@ -4,7 +4,7 @@ import crypto from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type Anthropic from "@anthropic-ai/sdk";
-import { motivoError, responder, type CrearMensaje, type OpcionesAgente } from "../src/agente.ts";
+import { AVISO_DOCUMENTOS, motivoError, PIDE_PERSONA, responder, type CrearMensaje, type OpcionesAgente } from "../src/agente.ts";
 import { cargarCalendario } from "../src/calendario.ts";
 import { Memoria } from "../src/memoria.ts";
 import { procesarEvento } from "../src/servidor.ts";
@@ -85,8 +85,22 @@ test("al derivar, el agente se aparta en los siguientes mensajes", async () => {
     respuesta([{ type: "text", text: "Et passo amb l'equip." }], "end_turn"),
   ]);
   const op = agente(m.crear);
-  assert.match((await responder(op, { contacto: "ES.3", texto: "PERSONA", ahora }))!, /equip/);
+  assert.match((await responder(op, { contacto: "ES.3", texto: "Vull parlar amb algú del centre", ahora }))!, /equip/);
   assert.equal(await responder(op, { contacto: "ES.3", texto: "Hola?", ahora }), null);
+  assert.equal(m.peticiones.length, 2);
+});
+
+test("datos sensibles: al derivar pide avisar de no enviar documentos y, en pausa, avisa sin llamar al modelo", async () => {
+  const m = modeloFalso([
+    respuesta([{ type: "tool_use", id: "t1", name: "derivar_a_persona", input: { motivo: "datos_sensibles", resumen: "Situación personal a tratar en confidencialidad", urgente: false } }], "tool_use"),
+    respuesta([{ type: "text", text: "Ho veurà l'equip." }], "end_turn"),
+  ]);
+  const op = agente(m.crear);
+  await responder(op, { contacto: "ES.10", texto: "Tinc una situació personal delicada", ahora });
+  const resultado = (m.peticiones[1].messages.at(-1)!.content as Anthropic.Beta.BetaToolResultBlockParam[])[0].content;
+  assert.match(String(resultado), /no envíe por WhatsApp documentos de identidad/);
+  assert.equal(await responder(op, { contacto: "ES.10", texto: "Te mando foto del DNI para que me apuntes", ahora }), AVISO_DOCUMENTOS);
+  assert.equal(await responder(op, { contacto: "ES.10", texto: "Gràcies", ahora }), null);
   assert.equal(m.peticiones.length, 2);
 });
 
@@ -98,6 +112,7 @@ test("si el modelo rechaza la petición, responde con un mensaje seguro y avisa 
   assert.match(texto!, /persona de l'equip/);
   assert.match(texto!, /intel·ligència artificial/); // el aviso de IA se envía aunque falle
   assert.equal(avisos.length, 1);
+  assert.equal(op.memoria.estaPausado("ES.4", ahora.getTime()), false); // el contacto no se queda sin respuesta
 });
 
 test("si falla el primer mensaje, el aviso de IA no se repite después", async () => {
@@ -192,4 +207,20 @@ test("errores de la API: el aviso al equipo va en castellano y sin detalles téc
   assert.doesNotMatch(avisos[0], /authentication_error/);
   assert.equal(motivoError(Object.assign(new Error("x"), { status: 529 })), "servicio de la IA no disponible temporalmente");
   assert.equal(motivoError(new Error("Could not resolve authentication method. Expected the apiKey to be set")), "falta la clave de la API (CLAVE_CLAUDE o ANTHROPIC_API_KEY)");
+});
+
+test("PERSONA: lo deriva el programa sin llamar al modelo e indica cuándo contestarán", async () => {
+  const avisos: string[] = [];
+  const m = modeloFalso([]);
+  const op = agente(m.crear, avisos);
+  const sabado = new Date("2026-10-17T11:00:00+02:00");
+  const texto = await responder(op, { contacto: "ES.9", texto: " Persona! ", ahora: sabado });
+  assert.match(texto!, /intel·ligència artificial/);
+  assert.match(texto!, /dilluns 19\/10\/2026 a les 9:00/);
+  assert.match(texto!, /lunes 19\/10\/2026 a las 9:00/);
+  assert.equal(m.peticiones.length, 0);
+  assert.equal(op.memoria.estaPausado("ES.9", sabado.getTime()), true);
+  assert.equal(op.memoria.derivacionesPendientes().length, 1);
+  assert.ok(avisos.some((a) => a.includes("PERSONA")));
+  assert.equal(PIDE_PERSONA.test("vull una persona que m'ajudi"), false);
 });

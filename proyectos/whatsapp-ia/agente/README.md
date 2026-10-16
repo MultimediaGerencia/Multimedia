@@ -19,7 +19,6 @@ Agente de IA para el WhatsApp de empresa (601 989 689), hecho con Claude Code. S
 ## Pendiente
 
 - **Notas de voz**: de momento pide que se lo escriban. Siguiente paso: Whisper turbo en el servidor.
-- **Precios y condiciones de los cursos ACTIC**: el agente recoge el interés y deriva a una persona.
 - **Citas en el calendario, recordatorios y preinscripción**: fase 2.
 
 ## Cómo probarlo (simulador)
@@ -35,10 +34,21 @@ npm run simulador
 
 Se escribe como si fuera un usuario de WhatsApp. Comandos: `/persona` simula que el equipo contesta desde el móvil, `/liberar`, `/nuevo` para un contacto nuevo e `/interesados` para ver los registrados.
 
+## Batería con la IA real
+
+Conversaciones de prueba con el modelo real (consume API): catalán y castellano, oferta, horario y cierres, alta de interesado, pago ACTIC, paso a una persona, quejas, datos sensibles, intentos de manipulación y otros idiomas. Cada escenario lleva una fecha fija y una nota de qué revisar.
+
+```bash
+npm run bateria                         # todos los escenarios
+npm run bateria -- actic-transferencia  # solo algunos
+```
+
+La transcripción queda en `datos/bateria-<fecha>.md` (no se sube al repositorio).
+
 ## Pruebas automáticas
 
 ```bash
-npm test          # 24 pruebas, sin coste: el modelo se simula
+npm test          # 27 pruebas, sin coste: el modelo se simula
 npm run typecheck
 ```
 
@@ -56,6 +66,7 @@ npm run typecheck
 | `src/whatsapp.ts` | Firma de Meta, interpretación de avisos y envío de mensajes |
 | `src/servidor.ts` | Servidor del webhook para producción |
 | `src/simulador.ts` | Simulador en el terminal |
+| `src/bateria.ts` | Batería de conversaciones con la IA real |
 
 ## Datos personales
 

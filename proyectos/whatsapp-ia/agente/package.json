@@ -10,6 +10,7 @@
   "scripts": {
     "simulador": "node --disable-warning=ExperimentalWarning src/simulador.ts",
     "servidor": "node --disable-warning=ExperimentalWarning src/servidor.ts",
+    "bateria": "node --disable-warning=ExperimentalWarning src/bateria.ts",
     "test": "node --disable-warning=ExperimentalWarning --test \"tests/*.test.ts\"",
     "typecheck": "tsc --noEmit"
   },

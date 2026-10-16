@@ -1,0 +1,19 @@
+# Para Synology (Container Manager → Proyecto) o cualquier servidor con Docker.
+# Las claves van en agente.env (copia de .env.example), que nunca se sube al repositorio.
+# El túnel de Cloudflare publica el agente en HTTPS sin abrir puertos en el router;
+# su token (TUNNEL_TOKEN) también va en agente.env.
+services:
+  agente:
+    build:
+      context: ../..
+      dockerfile: agente/despliegue/Dockerfile
+    env_file: agente.env
+    volumes:
+      - ./datos:/datos
+    restart: unless-stopped
+  tunel:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run
+    env_file: agente.env
+    depends_on: [agente]
+    restart: unless-stopped

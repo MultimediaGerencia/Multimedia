@@ -34,6 +34,24 @@ export interface Entrada {
 }
 
 const MAX_VUELTAS = 6;
+/** Mensaje que, por sí solo, pide hablar con una persona: PERSONA, persona, «Persona.», etc. */
+export const PIDE_PERSONA = /^\s*\*?persona\*?[\s.!¡?¿]*$/i;
+
+function cuandoContestan(op: OpcionesAgente, ahora: number): string {
+  const e = estadoCentro(op.calendario, new Date(ahora));
+  if (e.abierto) return "Et respondrà al més aviat possible. / Te responderá lo antes posible.";
+  const ca = e.proximaApertura ?? "quan el centre obri";
+  const es = ca.replace("avui", "hoy").replace(" a les ", " a las ")
+    .replace(/^(diumenge|dilluns|dimarts|dimecres|dijous|divendres|dissabte)/, (d) => ({ diumenge: "domingo", dilluns: "lunes", dimarts: "martes", dimecres: "miércoles", dijous: "jueves", divendres: "viernes", dissabte: "sábado" })[d]!);
+  return `Ara el centre és tancat: et respondrà ${ca}. / Ahora el centro está cerrado: te responderá ${es}.`;
+}
+
+/** Mensaje que menciona documentos de identidad o de salud: aunque la conversación esté en pausa, se avisa de no enviarlos. */
+export const MENCIONA_DOCUMENTOS = /\b(dni|nie|pasaporte|passaport|documento de identidad|document d'identitat|tarjeta sanitaria|targeta sanit[àa]ria|informe m[ée]dico|informe m[èe]dic|certificado de discapacidad|certificat de discapacitat)\b/i;
+
+export const AVISO_DOCUMENTOS =
+  "Si us plau, no enviïs documents d'identitat ni dades de salut per WhatsApp: l'equip t'indicarà com fer-ho de manera segura. / Por favor, no envíes documentos de identidad ni datos de salud por WhatsApp: el equipo te indicará cómo hacerlo de forma segura.";
+
 const MENSAJE_ERROR =
   "Ara mateix no puc respondre. Una persona de l'equip et contestarà com més aviat millor. / Ahora mismo no puedo responder. Una persona del equipo te contestará lo antes posible.";
 
@@ -69,9 +87,25 @@ export async function responder(op: OpcionesAgente, entrada: Entrada): Promise<s
   const contacto = entrada.contacto;
   memoria.asegurarContacto(contacto, ahora, entrada.telefono, entrada.nombrePerfil);
   const nuevo = memoria.necesitaAviso(contacto);
-  if (memoria.estaPausado(contacto, ahora)) return null;
+  if (memoria.estaPausado(contacto, ahora)) {
+    // El equipo lleva la conversación, pero el aviso de no enviar documentos no puede esperar.
+    return MENCIONA_DOCUMENTOS.test(entrada.texto) ? AVISO_DOCUMENTOS : null;
+  }
 
   const sesion = memoria.sesionActual(contacto, ahora, op.horasSesion);
+
+  if (PIDE_PERSONA.test(entrada.texto)) {
+    // Lo resuelve el programa, sin pasar por el modelo: más fiable y sin coste.
+    const respuesta = `D'acord, et passo amb una persona de l'equip. / De acuerdo, te paso con una persona del equipo.\n${cuandoContestan(op, ahora)}`;
+    memoria.anadir(sesion, { role: "user", content: entrada.texto }, ahora);
+    memoria.anadir(sesion, { role: "assistant", content: respuesta }, ahora);
+    memoria.registrarDerivacion({ contacto, motivo: "lo_pide", resumen: "Ha escrito PERSONA", urgente: false }, ahora);
+    memoria.pausar(contacto, ahora + op.horasPausaHumano * 3_600_000);
+    await op.avisarEquipo(`Conversación derivada (lo_pide) · ${memoria.referencia(contacto)}: ha escrito PERSONA`);
+    if (nuevo) memoria.marcarAvisado(contacto);
+    return nuevo ? `${avisoInicial(op.urlPrivacidad)}\n\n${respuesta}` : respuesta;
+  }
+
   const mensajes = memoria.historial(sesion);
   const anadir = (m: Anthropic.Beta.BetaMessageParam) => {
     mensajes.push(m);
@@ -104,8 +138,8 @@ export async function responder(op: OpcionesAgente, entrada: Entrada): Promise<s
       });
 
       if (r.stop_reason === "refusal") {
-        await op.avisarEquipo(`El asistente no ha podido responder a ${memoria.referencia(contacto)} (rechazo del modelo). Revisar la conversación.`);
-        memoria.pausar(contacto, ahora + op.horasPausaHumano * 3_600_000);
+        // No se pausa al contacto: si vuelve a escribir, empieza una conversación nueva.
+        await op.avisarEquipo(`El asistente no ha podido responder a ${memoria.referencia(contacto)} (rechazo del modelo). Revisar la conversación; el asistente sigue atendiendo.`);
         memoria.cerrarSesion(sesion);
         return nuevo ? conAviso(MENSAJE_ERROR) : MENSAJE_ERROR;
       }
