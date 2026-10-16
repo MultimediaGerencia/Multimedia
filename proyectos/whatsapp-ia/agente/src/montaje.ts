@@ -10,11 +10,12 @@ import { instrucciones } from "./prompt.ts";
 /** Monta el agente con la configuración y la base de conocimiento del centro. */
 export function montarAgente(nombreBd: string, crear: CrearMensaje = clienteClaude()): OpcionesAgente {
   const memoria = new Memoria(path.join(config.dirDatos, nombreBd));
+  const calendario = cargarCalendario(config.dirConocimiento);
   return {
     crear,
     memoria,
-    calendario: cargarCalendario(config.dirConocimiento),
-    instrucciones: instrucciones(cargarOferta(config.dirConocimiento), config.urlPrivacidad),
+    calendario,
+    instrucciones: instrucciones(cargarOferta(config.dirConocimiento), config.urlPrivacidad, calendario),
     modelo: config.modelo,
     esfuerzo: config.esfuerzo,
     maxTokens: config.maxTokens,

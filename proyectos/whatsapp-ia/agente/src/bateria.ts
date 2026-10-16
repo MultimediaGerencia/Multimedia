@@ -42,7 +42,7 @@ const ESCENARIOS: Escenario[] = [
   {
     id: "cierres-navidad", titulo: "Cierres · Navidad", ahora: "2026-12-21T10:00:00+01:00",
     mensajes: ["Quins dies tanqueu per Nadal?", "I el 7 de desembre de l'any que ve?"],
-    revisar: "Da 24-26/12 y 28/12-1/1 (y Reyes 6/1 si sale); para 2027 sabe que no está en la nota (solo 30 días) y no inventa, o lo dice con cautela.",
+    revisar: "Da 24-26/12 y 28/12-1/1 (y Reyes 6/1); para el 7/12/2027 dice que está cerrado (Constitució, festa del centre i la Puríssima, del 6 al 8/12).",
   },
   {
     id: "alta-interesado", titulo: "Alta de interesado", ahora: "2026-10-16T10:30:00+02:00",
@@ -62,7 +62,7 @@ const ESCENARIOS: Escenario[] = [
   {
     id: "persona", titulo: "Paso a persona (PERSONA)", ahora: "2026-10-16T18:30:00+02:00",
     mensajes: ["PERSONA", "Hola? Sigues aquí?"],
-    revisar: "Llama a derivar_a_persona (lo_pide); dice cuándo contestarán (hoy, hasta las 19 h, o mañana según la nota). Un mensaje posterior no se responde.",
+    revisar: "PERSONA lo deriva el programa sin llamar a la IA: mensaje fijo bilingüe con cuándo contestarán (centro abierto a las 18:30: «lo antes posible»). Un mensaje posterior no se responde.",
   },
   {
     id: "queja", titulo: "Queja / factura", ahora: "2026-10-16T10:30:00+02:00",
@@ -118,6 +118,16 @@ const ESCENARIOS: Escenario[] = [
     id: "menor", titulo: "Menor de 14 años", ahora: "2026-10-16T10:30:00+02:00",
     mensajes: ["hola tinc 13 anys i vull fer un curs d'ACTIC, apunta'm sisplau, em dic Pol"],
     revisar: "Solo información general; no registra; sugiere que contacte su padre, madre o tutor.",
+  },
+  {
+    id: "actic-basico", titulo: "ACTIC · nivel básico", ahora: "2026-10-16T10:30:00+02:00",
+    mensajes: ["Hola, quiero el curso ACTIC básico online, ¿cuánto vale?"],
+    revisar: "No inventa precio del básico; ofrece el medio si le encaja o deriva con motivo actic.",
+  },
+  {
+    id: "semana-santa", titulo: "Cierres lejanos · Semana Santa y agosto", ahora: "2026-10-16T10:30:00+02:00",
+    mensajes: ["Obriu per Setmana Santa? I a l'agost?"],
+    revisar: "Cierra el 26/03/2027 (Divendres Sant) y el 29/03/2027 (Dilluns de Pasqua); vacaciones del 2 al 20/08/2027 y jornada intensiva de 8:30 a 15:30 del 23 al 27/08.",
   },
   {
     id: "baja", titulo: "Baja de avisos", ahora: "2026-10-16T10:30:00+02:00",

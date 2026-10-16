@@ -103,6 +103,18 @@ export function estadoCentro(cal: Calendario, fecha: Date): EstadoCentro {
   };
 }
 
+/** Calendario completo (cierres y jornada intensiva) para las instrucciones fijas del agente. */
+export function textoCalendario(cal: Calendario): string {
+  const tramo = (desde: string, hasta: string) => (desde === hasta ? fechaLarga(desde) : `del ${fechaLarga(desde)} al ${fechaLarga(hasta)}`);
+  return [
+    "Días de cierre del centro:",
+    ...cal.cierres.map((c) => `- ${tramo(c.desde, c.hasta)}: ${c.motivo}`),
+    "Jornada intensiva (de lunes a viernes):",
+    ...cal.jornada_intensiva.map((j) => `- ${tramo(j.desde, j.hasta)}: ${j.franjas.map(([i, f]) => `${hora(i)}-${hora(f)}`).join(" i ")}`),
+    "Fuera de estas fechas no hay cierres previstos además de los fines de semana. Si preguntan por fechas más allá de la lista, di que el calendario aún no está publicado.",
+  ].join("\n");
+}
+
 /** Nota de contexto que se añade tras cada mensaje del usuario. */
 export function notaEstado(e: EstadoCentro): string {
   const lineas = [

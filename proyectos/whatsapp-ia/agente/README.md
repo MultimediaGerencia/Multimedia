@@ -48,7 +48,7 @@ La transcripción queda en `datos/bateria-<fecha>.md` (no se sube al repositorio
 ## Pruebas automáticas
 
 ```bash
-npm test          # 24 pruebas, sin coste: el modelo se simula
+npm test          # 26 pruebas, sin coste: el modelo se simula
 npm run typecheck
 ```
 
