@@ -34,5 +34,7 @@ export const config = {
     appSecret: process.env.WHATSAPP_APP_SECRET ?? "",
     verifyToken: process.env.WHATSAPP_VERIFY_TOKEN ?? "",
   },
+  // Flujo de Workflows de Teams que publica los avisos en el canal del equipo.
+  teamsWebhookUrl: process.env.TEAMS_WEBHOOK_URL ?? "",
   puerto: entero(process.env.PUERTO, 3000),
 };

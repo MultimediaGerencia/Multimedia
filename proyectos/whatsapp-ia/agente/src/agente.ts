@@ -86,7 +86,7 @@ export async function responder(op: OpcionesAgente, entrada: Entrada): Promise<s
       });
 
       if (r.stop_reason === "refusal") {
-        await op.avisarEquipo(`El asistente no ha podido responder a ${contacto} (rechazo del modelo). Revisar la conversación.`);
+        await op.avisarEquipo(`El asistente no ha podido responder a ${memoria.referencia(contacto)} (rechazo del modelo). Revisar la conversación.`);
         memoria.pausar(contacto, ahora + op.horasPausaHumano * 3_600_000);
         memoria.cerrarSesion(sesion);
         return nuevo ? conAviso(MENSAJE_ERROR) : MENSAJE_ERROR;
@@ -113,7 +113,7 @@ export async function responder(op: OpcionesAgente, entrada: Entrada): Promise<s
       anadir({ role: "user", content: resultados });
     }
   } catch (error) {
-    await op.avisarEquipo(`Error del asistente con ${contacto}: ${(error as Error).message}`);
+    await op.avisarEquipo(`Error del asistente con ${memoria.referencia(contacto)}: ${(error as Error).message}`);
     memoria.cerrarSesion(sesion);
     return nuevo ? conAviso(MENSAJE_ERROR) : MENSAJE_ERROR;
   }

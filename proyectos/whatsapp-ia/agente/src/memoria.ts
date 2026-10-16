@@ -82,6 +82,13 @@ export class Memoria {
     return r?.id;
   }
 
+  /** Cómo identificar al contacto en los avisos al equipo: teléfono si lo hay. */
+  referencia(contacto: string): string {
+    const r = this.db.prepare("SELECT telefono, nombre_perfil FROM contactos WHERE id = ?").get(contacto) as { telefono: string | null; nombre_perfil: string | null } | undefined;
+    const tel = r?.telefono ? `+${r.telefono}` : contacto;
+    return r?.nombre_perfil ? `${r.nombre_perfil} (${tel})` : tel;
+  }
+
   pausar(contacto: string, hasta: number): void {
     this.db.prepare("UPDATE contactos SET pausado_hasta = ? WHERE id = ?").run(hasta, contacto);
   }

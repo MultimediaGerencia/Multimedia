@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { cargarOferta, leerCsv, textoOferta } from "../src/conocimiento.ts";
 import { instrucciones } from "../src/prompt.ts";
+import { tarjetaTeams } from "../src/avisos.ts";
 
 const dir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../conocimiento");
 
@@ -38,4 +39,13 @@ test("las instrucciones marcan lo pendiente como previsto y son estables", () =>
   // Sin fecha ni hora dentro: si cambiaran en cada mensaje, la caché no funcionaría
   assert.equal(instrucciones(cursos, "https://x"), instrucciones(cursos, "https://x"));
   assert.doesNotMatch(instrucciones(cursos, "https://x"), /\d{2}:\d{2}:\d{2}/);
+});
+
+test("la tarjeta de Teams lleva el texto y marca los urgentes", () => {
+  const t = tarjetaTeams("URGENTE · Conversación derivada (queja_o_pago): ...") as any;
+  const cuerpo = t.attachments[0].content.body;
+  assert.equal(t.attachments[0].contentType, "application/vnd.microsoft.card.adaptive");
+  assert.equal(cuerpo[0].color, "Attention");
+  assert.match(cuerpo[1].text, /queja_o_pago/);
+  assert.equal((tarjetaTeams("Nuevo interesado") as any).attachments[0].content.body[0].color, "Accent");
 });

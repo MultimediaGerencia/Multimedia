@@ -13,12 +13,12 @@ Agente de IA para el WhatsApp de empresa (601 989 689), hecho con Claude Code. S
 - **Registra las bajas** de avisos.
 - **Seguridad con Meta**: comprueba la firma de cada aviso, descarta duplicados e identifica a cada persona por su BSUID.
 - **Errores**: si falla o el modelo rechaza la petición, responde con un mensaje seguro y avisa al equipo.
+- **Avisos al equipo por Teams**: interesados nuevos, derivaciones (las urgentes, en rojo) y errores, en un canal de Teams. También quedan en `datos/avisos-equipo.log`.
 
 ## Pendiente
 
 - **Notas de voz**: de momento pide que se lo escriban. Siguiente paso: Whisper turbo en el servidor.
 - **Precios y condiciones de los cursos ACTIC**: el agente recoge el interés y deriva a una persona.
-- **Avisos al equipo**: ahora se apuntan en `datos/avisos-equipo.log`. Siguiente paso: correo o Teams.
 - **Citas en el calendario, recordatorios y preinscripción**: fase 2.
 
 ## Cómo probarlo (simulador)
@@ -47,6 +47,7 @@ npm run typecheck
 |---|---|
 | `src/prompt.ts` | Instrucciones del agente: tono, límites, derivación, programas y oferta |
 | `src/agente.ts` | Bucle con Claude: memoria, herramientas y gestión de errores |
+| `src/avisos.ts` | Avisos al canal de Teams |
 | `src/herramientas.ts` | Registrar interesado, derivar a persona y registrar baja |
 | `src/calendario.ts` | Horario, jornada intensiva y cierres (lee `conocimiento/calendario.json`) |
 | `src/conocimiento.ts` | Carga la oferta (`conocimiento/oferta-2026-27.csv`) |

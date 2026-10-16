@@ -68,14 +68,14 @@ export async function ejecutarHerramienta(nombre: string, entrada: unknown, ctx:
         },
         ctx.ahora,
       );
-      await ctx.avisarEquipo(`Nuevo interesado: ${e.nombre} · ${e.curso_interes} · ${e.situacion_laboral}`);
+      await ctx.avisarEquipo(`Nuevo interesado: ${e.nombre} · ${e.curso_interes} · ${e.situacion_laboral} · ${ctx.memoria.referencia(ctx.contacto)}`);
       return "Registrado correctamente.";
     }
     case "derivar_a_persona": {
       const resumen = String(e.resumen ?? "");
       ctx.memoria.registrarDerivacion({ contacto: ctx.contacto, motivo: String(e.motivo ?? "otro"), resumen, urgente: e.urgente === true }, ctx.ahora);
       ctx.memoria.pausar(ctx.contacto, ctx.ahora + ctx.horasPausaHumano * 3_600_000);
-      await ctx.avisarEquipo(`${e.urgente === true ? "URGENTE · " : ""}Conversación derivada (${e.motivo}): ${resumen}`);
+      await ctx.avisarEquipo(`${e.urgente === true ? "URGENTE · " : ""}Conversación derivada (${e.motivo}) · ${ctx.memoria.referencia(ctx.contacto)}: ${resumen}`);
       return "Derivado. El equipo continuará la conversación; despídete indicando cuándo le contestarán.";
     }
     case "registrar_baja": {
