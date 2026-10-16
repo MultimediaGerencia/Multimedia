@@ -38,11 +38,8 @@ Esto sigue tu indicación: lo pendiente se puede publicitar hasta que haya resol
 
 Según la captura del calendario de noviembre de 2026:
 
-- **«Eines coaching 1»**: sesiones el 16, 18, 20 y 23 de noviembre de 2026.
-- Hay otro grupo en marcha con sesiones de lunes a viernes durante todo noviembre (sesiones 21 a 41), pero en la captura no aparece su nombre.
-- El 2 de noviembre aparece «T IA 6ª».
-
-**[Confirmar]** programa, horario, colectivo, plazas libres y si se puede anunciar.
+- **«Eines coaching 1»**: 6 sesiones, los días 11, 13, 16, 18, 20 y 23 de noviembre de 2026 (confirmado por gerencia). Es el último curso que empieza este año.
+- **[Confirmar]** programa, horario, colectivo, plazas libres y si el agente puede anunciarlo.
 
 ## Calendario
 

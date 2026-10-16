@@ -10,7 +10,7 @@ Fuentes: «Calendari 2026» (7/7/2025, con anotaciones a mano) y «Calendari lab
 | Viernes | 9:00-15:00 |
 | Sábado y domingo | Cerrado |
 
-**Verano 2027** (jornada intensiva de 8:30 a 15:30): viernes de junio y del 28/6 al 30/7, y del 23/8 al 27/8 **[confirmar en el calendario el tramo exacto]**.
+**Jornada intensiva de verano 2027**: de lunes a viernes de 8:30 a 15:30, del lunes 28/6 al viernes 30/7 y del lunes 23/8 al viernes 27/8 (confirmado por gerencia). Fuera de esos tramos se aplica el horario habitual.
 
 ## Días de cierre: resto de 2026
 
@@ -33,7 +33,7 @@ Fuentes: «Calendari 2026» (7/7/2025, con anotaciones a mano) y «Calendari lab
 | Lunes 29/3/2027 | Lunes de Pascua |
 | Jueves 24/6/2027 | Sant Joan |
 | Viernes 25/6/2027 | Fiesta del centro (sustituye un festivo local) |
-| Del 2 al 20/8/2027 | Vacaciones de verano **[confirmar: color azul sin leyenda en el calendario]** |
+| Del 2 al 20/8/2027 | Vacaciones de verano |
 | Martes 12/10/2027 | Fiesta Nacional |
 | Lunes 1/11/2027 | Todos los Santos |
 | Lunes 6/12/2027 | Constitución |
@@ -43,7 +43,7 @@ Fuentes: «Calendari 2026» (7/7/2025, con anotaciones a mano) y «Calendari lab
 
 Festivos que caen en fin de semana en 2027: 1/5, 15/8, 11/9 y 25/12.
 
-En septiembre de 2027 hay dos días marcados en verde («festivo local que se sustituye por el 25 de junio y el 7 de diciembre»): sábado 4/9 y miércoles 15/9. **[Confirmar]** si el miércoles 15/9 se abre.
+Los días 4/9 y 15/9/2027 son fiestas locales de Torredembarra. El centro **abre** esos días y, a cambio, cierra el 25/6 y el 7/12.
 
 ## Inicio de los cursos 2026-2027
 
