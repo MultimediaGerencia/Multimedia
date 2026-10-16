@@ -129,7 +129,7 @@ Pendiente de verificar: gratuidad y ayudas (transporte, conciliación), document
 - [ ] Volumen aproximado de conversaciones al mes y franjas de más trabajo.
 - [x] Horario de atención.
 - [ ] Calendario de festivos y horario de verano, si lo hay.
-- [ ] Oferta vigente 2026-2027 en una hoja (plantilla a preparar).
+- [x] Oferta 2026-2027 (hoja provisional, ver conocimiento/). Faltan fechas, horarios y sedes.
 - [ ] Tipos de cita (informativa, prueba de nivel, matrícula), duración y quién las atiende.
 - [ ] Calendario que se usa (Google o Microsoft).
 - [ ] Dónde se registran hoy los interesados (hoja, CRM, papel).

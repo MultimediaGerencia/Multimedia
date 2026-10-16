@@ -1,0 +1,35 @@
+codigo;nombre_curso;programa;organismo;colectivo;nivel;horas;horas_practicas;plazas_por_grupo;grupos;fecha_inicio;fecha_fin;horario;sede;modalidad;estado;enlace_programa;observaciones
+FC01_IMPE0006_202449;Biomagnetisme aplicat a l'estètica;PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);2;16;;15;1;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/IMPE0006_CAT.pdf;
+FC01_SANP0011_202349;Tècniques de massatge;PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);2;20;;28;2;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/SANP0011_CAT.pdf;
+FC01_IFCD64_202164;Gestió de Projectes d implementació del CRM;PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);4;145;;30;1;;;;;;aprobado;https://serveiocupacio.gencat.cat/web/.content/20_millorar-el-perfil/programes-formatius/ca/IFCD64_cat.pdf;
+FC01_FCOI20_202271;Comunicació i col·laboració amb eines digitals (ACTIC Nivell avançat);PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);3;40;;15;1;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/FCOI20.pdf;
+FC01_FCOI18_202271;Comunicació i col·laboració amb eines digitals (ACTIC Nivell bàsic);PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);1;40;;14;1;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/FCOI18.pdf;
+FC01_FCOI19_202271;Comunicació i col·laboració amb eines digitals (ACTIC Nivell intermedi);PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);2;40;;28;2;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/FCOI19.pdf;
+FC01_FCOI15_202271;Creació de continguts digitals (ACTIC Nivell bàsic);PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);1;40;;14;1;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/FCOI15.pdf;
+FC01_FCOI16_202271;Creació de continguts digitals i programació (ACTIC Nivell intermedi);PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);2;40;;28;2;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/FCOI16.pdf;
+FC01_COMM0009_202370;Atenció al client;PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);1;30;;15;1;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/COMM0009_CAT.pdf;
+FC01_CTRP0005_202370;Coaching de fortaleses;PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);2;40;;15;1;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/CTRP0005_CAT.pdf;
+FC01_CTRP0037_202670;Coaching de fortaleses. Nivell II;PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);2;40;;15;1;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/CTRP0037_CAT.pdf;
+FC01_CTRL0040_202470;CTRL0040_2024_Català A1 (Català nivell inicial A1);PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);1;90;;15;1;;;;;;aprobado;https://serveiocupacio.gencat.cat/web/.content/20_millorar-el-perfil/programes-formatius/ca/CAT_CTRL0040.pdf;
+FC01_CTRL0041_202470;CTRL0041_2024_Català A2.1 (Català bàsic 1 );PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);1;45;;15;1;;;;;;aprobado;https://serveiocupacio.gencat.cat/web/.content/20_millorar-el-perfil/programes-formatius/ca/CAT_CTRL0041.pdf;
+FC01_IFCT117_202470;Introducció a la intel·ligència artificial;PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);3;25;;28;2;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/IFCT117_V2.pdf;
+FC01_CTRP0006_202370;Mindfulness;PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);1;30;;14;1;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/CTRP0006_CAT.pdf;
+FC01_SEAD0227_202370;Tècniques de relaxació;PIMEC (Consorci per a la Formació Contínua);CFCC;Persones treballadores (prioritari);1;20;;14;1;;;;;;aprobado;https://conforcat.gencat.cat/web/.content/Enllac/Cataleg/pdfs/SEAD0227_V2_CAT.pdf;
+ADGG0208;ACTIVITATS ADMINISTRATIVES EN LA RELACIO AMB EL CLIENT;Consorci per a la Formació Contínua (certificat professional);CFCC;Persones treballadores (prioritari);2;;;15;;;;;;;pendiente_resolucion;;
+FCOS02;BASIC PREVENCIO DE RISCOS LABORALS;Consorci per a la Formació Contínua (certificat professional);SOC;Persones treballadores (prioritari);;;;15;;;;;;;pendiente_resolucion;;"Módulo complementario; organismo SOC según la hoja interna"
+ADGG0208;ACTIVITATS ADMINISTRATIVES EN LA RELACIO AMB EL CLIENT;Forma i Contracta (SOC);SOC;Persones aturades;2;;;15;;;;;;;pendiente_resolucion;;
+FCOS02;BASIC PREVENCIO DE RISCOS LABORALS;Forma i Contracta (SOC);SOC;Persones aturades;;;;15;;;;;;;pendiente_resolucion;;
+CTRH0011;DRETS I DEURES LABORALS;Forma i Contracta (SOC);SOC;Persones aturades;;;;15;;;;;;;pendiente_resolucion;;
+CTRHI0015;IGUALTAT DE GÈNERE EN L'AMBIT LABORAL;Forma i Contracta (SOC);SOC;Persones aturades;;;;15;;;;;;;pendiente_resolucion;;
+FCOI25;ACTIC. Seguretat i civisme en l'entorn digital – nivell intermedi (40 h);Forma i Contracta (SOC);SOC;;;;;;;;;;;;pendiente_resolucion;;
+ADGD0308;ACTIVITATS DE GESTIO ADMINISTRATIVA;FOAP (SOC);SOC;Persones aturades;2;660;220;15;;;;;;;pendiente_resolucion;;
+ADGG0508;OP. AUXILIARS D'ENREGISTRAMENT I TRACTAMENT DE DADES I DOCUMENTS;FOAP (SOC);SOC;Persones aturades;1;352;88;15;;;;;;;pendiente_resolucion;;
+IFCD0110;CONFECCIÓ I PUBLCACIÓ DE PAGINES WEB;FOAP (SOC);SOC;Persones aturades;2;480;80;15;;;;;;;pendiente_resolucion;;
+SSCS0208;ATENCIÓ SOCISANITÀRIA A PERSONES DEPENDENTS EN INSTITUCIONS SOCIALS;FOAP (SOC);SOC;Persones aturades;2;337;112.5;15;;;;;;;pendiente_resolucion;;
+ADGG0408;OPERACIONS AUXILIARS DE SERVEIS ADMINSITRATIUS I GENERALS;FOAP (SOC);SOC;Persones aturades;;;;15;;;;;;;pendiente_resolucion;;
+FCOV24;COMUNICACIÓ EN LLENGUA CATALANA;FOAP (SOC);SOC;Persones aturades;;;;15;;;;;;;pendiente_resolucion;;
+SSCS0208;ATENCIÓ SOCISANITÀRIA A PERSONES DEPENDENTS EN INSTITUCIONS SOCIALS;FOAP (SOC);SOC;Persones aturades;;;;;;;;;;;pendiente_resolucion;;Segundo grupo solicitado
+B_IMPE0110_MF0063;MASSATGES ESTÈTIC MANUAL I MECÀNIC;Consorci per a la Formació Contínua (mòduls);CFCC;Persones treballadores (prioritari);;152;;;;;;;;;sin_confirmar;;
+B_IMPE0110_MF0790;DRENATGE LIMFÀTIC ESTÈTIC MANUAL I MECÀNIC;Consorci per a la Formació Contínua (mòduls);CFCC;Persones treballadores (prioritari);;114;;;;;;;;;sin_confirmar;;
+B_IMPE110_MF0791;MASSATGES ESTÈTICS AMB TÈCNIQUES PER PRESSIÓ;Consorci per a la Formació Contínua (mòduls);CFCC;Persones treballadores (prioritari);;114;;;;;;;;;sin_confirmar;;
+B_IMPE0110_MF0792;TÈCNIQUES SENSORIALS ESTÈTIQUES;Consorci per a la Formació Contínua (mòduls);CFCC;Persones treballadores (prioritari);;76;;;;;;;;;sin_confirmar;;
