@@ -191,5 +191,5 @@ test("errores de la API: el aviso al equipo va en castellano y sin detalles téc
   assert.match(avisos[0], /clave de la API no válida/);
   assert.doesNotMatch(avisos[0], /authentication_error/);
   assert.equal(motivoError(Object.assign(new Error("x"), { status: 529 })), "servicio de la IA no disponible temporalmente");
-  assert.equal(motivoError(new Error("Could not resolve authentication method. Expected the apiKey to be set")), "falta la clave de la API (ANTHROPIC_API_KEY)");
+  assert.equal(motivoError(new Error("Could not resolve authentication method. Expected the apiKey to be set")), "falta la clave de la API (CLAVE_CLAUDE o ANTHROPIC_API_KEY)");
 });

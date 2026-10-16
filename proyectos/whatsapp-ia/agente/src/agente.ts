@@ -46,13 +46,16 @@ export function motivoError(error: unknown): string {
   if (estado !== undefined && estado >= 500) return "servicio de la IA no disponible temporalmente";
   const nombre = (error as Error)?.name ?? "";
   if (/Connection|Timeout/i.test(nombre)) return "sin conexión con el servicio de la IA";
-  if (/api[_ ]?key|apiKey|authentication/i.test(String((error as Error)?.message))) return "falta la clave de la API (ANTHROPIC_API_KEY)";
+  if (/api[_ ]?key|apiKey|authentication/i.test(String((error as Error)?.message))) return "falta la clave de la API (CLAVE_CLAUDE o ANTHROPIC_API_KEY)";
   return "error interno del asistente";
 }
 
-/** Cliente real de la API de Claude. */
+/**
+ * Cliente real de la API de Claude. Acepta la clave en CLAVE_CLAUDE (para entornos que reservan
+ * ANTHROPIC_API_KEY, como las sesiones de Claude Code en la nube) o en ANTHROPIC_API_KEY.
+ */
 export function clienteClaude(): CrearMensaje {
-  const client = new Anthropic();
+  const client = new Anthropic({ apiKey: process.env.CLAVE_CLAUDE || process.env.ANTHROPIC_API_KEY || null });
   return (p) => client.beta.messages.create(p);
 }
 
