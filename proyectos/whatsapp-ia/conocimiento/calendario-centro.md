@@ -18,10 +18,11 @@ Fuentes: «Calendari 2026» (7/7/2025, con anotaciones a mano) y «Calendari lab
 |---|---|
 | Lunes 7/12/2026 | Fiesta del centro |
 | Martes 8/12/2026 | Festivo (Inmaculada) |
-| Martes 22 y miércoles 23/12/2026 | **Por confirmar**: anotado «depende de la faena» |
 | Jueves 24/12/2026 | Vacaciones de Navidad |
 | Viernes 25 y sábado 26/12/2026 | Festivos |
 | Del 28 al 31/12/2026 | Vacaciones de Navidad |
+
+Los días 22 y 23/12/2026 el centro **abre** (confirmado por gerencia).
 
 ## Días de cierre: 2027
 

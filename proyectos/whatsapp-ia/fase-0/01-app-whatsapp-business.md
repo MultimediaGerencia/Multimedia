@@ -11,7 +11,7 @@ Lo marcado **[COMPLETAR]** lo debe rellenar el centro. Los textos van primero en
 | Nombre | Multimèdia Tarragona |
 | Categoría | Educación / Centro de formación |
 | Descripción | Formació professional adaptada a les teves necessitats. Cursos per a persones aturades i ocupades, certificats professionals i formació per a empreses. Centre certificat ISO 9001 i ISO 14001. |
-| Dirección | C/ Joana Jugan 2, local 12, 43002 Tarragona |
+| Dirección | Pg. de l'Estació 10, baixos, 43830 Torredembarra **[CONFIRMAR dirección exacta]** |
 | Horario | Lunes a jueves: 9:00-13:00 y 15:00-19:00 · Viernes: 9:00-15:00 · Sábado y domingo: cerrado |
 | Correo | info@multimediatarragona.com |
 | Web | https://www.multimediatarragona.com |
@@ -38,7 +38,7 @@ Se escriben con «/» y el atajo. Las respuestas sobre cursos remiten siempre a 
 
 | Atajo | Texto (ca / es) |
 |---|---|
-| /on | Som al C/ Joana Jugan 2, local 12, 43002 Tarragona. Horari: de dilluns a dijous de 9 a 13 h i de 15 a 19 h; divendres de 9 a 15 h. / Estamos en C/ Joana Jugan 2, local 12, 43002 Tarragona. Horario: de lunes a jueves de 9 a 13 h y de 15 a 19 h; viernes de 9 a 15 h. |
+| /on | Som al Pg. de l'Estació 10, baixos, 43830 Torredembarra. Horari: de dilluns a dijous de 9 a 13 h i de 15 a 19 h; divendres de 9 a 15 h. / Estamos en Pg. de l'Estació 10, bajos, 43830 Torredembarra. Horario: de lunes a jueves de 9 a 13 h y de 15 a 19 h; viernes de 9 a 15 h. |
 | /cursos | Aquests són els cursos oberts ara: [COMPLETAR enlace o lista]. Quin t'interessa? / Estos son los cursos abiertos ahora: [COMPLETAR]. ¿Cuál te interesa? |
 | /soc | Per als cursos del SOC per a persones aturades cal estar inscrit/a al SOC com a demandant d'ocupació abans de començar. Si encara no ho estàs, et podem orientar. / Para los cursos del SOC para personas desempleadas hay que estar inscrito/a en el SOC como demandante de empleo antes de empezar. Si aún no lo estás, te orientamos. |
 | /requisits | Els requisits depenen del nivell del curs. Digue'ns quin curs t'interessa i quins estudis tens, i el nostre equip t'ho confirma. / Los requisitos dependen del nivel del curso. Dinos qué curso te interesa y qué estudios tienes, y nuestro equipo te lo confirma. |
