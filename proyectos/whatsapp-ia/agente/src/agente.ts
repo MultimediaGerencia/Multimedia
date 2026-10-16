@@ -21,6 +21,8 @@ export interface OpcionesAgente {
   horasSesion: number;
   horasPausaHumano: number;
   avisarEquipo: (texto: string) => Promise<void> | void;
+  ibanActic?: string;
+  responsableActic?: string;
 }
 
 export interface Entrada {
@@ -103,7 +105,7 @@ export async function responder(op: OpcionesAgente, entrada: Entrada): Promise<s
         if (bloque.type !== "tool_use") continue;
         try {
           const salida = await ejecutarHerramienta(bloque.name, bloque.input, {
-            memoria, contacto, ahora, horasPausaHumano: op.horasPausaHumano, avisarEquipo: op.avisarEquipo,
+            memoria, contacto, ahora, horasPausaHumano: op.horasPausaHumano, avisarEquipo: op.avisarEquipo, iban: op.ibanActic, responsableActic: op.responsableActic,
           });
           resultados.push({ type: "tool_result", tool_use_id: bloque.id, content: salida });
         } catch (error) {

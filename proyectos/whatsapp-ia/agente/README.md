@@ -10,6 +10,7 @@ Agente de IA para el WhatsApp de empresa (601 989 689), hecho con Claude Code. S
 - **Registra a los interesados** (nombre, curso, situación laboral, idioma y si acepta avisos) y avisa al equipo.
 - **Pasa la conversación a una persona** cuando hace falta y deja de responder a ese contacto.
 - **Se aparta** cuando alguien del equipo contesta desde la app del móvil (coexistencia).
+- **Cobro de los cursos ACTIC**: da el importe, el IBAN y el concepto exacto de la transferencia (`AON2/2026/10`…), calculado por el programa, y avisa a la responsable para que dé el acceso.
 - **Registra las bajas** de avisos.
 - **Seguridad con Meta**: comprueba la firma de cada aviso, descarta duplicados e identifica a cada persona por su BSUID.
 - **Errores**: si falla o el modelo rechaza la petición, responde con un mensaje seguro y avisa al equipo.

@@ -21,6 +21,8 @@ export function montarAgente(nombreBd: string, crear: CrearMensaje = clienteClau
     urlPrivacidad: config.urlPrivacidad,
     horasSesion: config.horasSesion,
     horasPausaHumano: config.horasPausaHumano,
+    ibanActic: config.ibanActic,
+    responsableActic: config.responsableActic,
     avisarEquipo: crearAvisador({ dirDatos: config.dirDatos, teamsWebhookUrl: config.teamsWebhookUrl }),
   };
 }

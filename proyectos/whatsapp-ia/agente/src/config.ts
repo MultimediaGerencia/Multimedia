@@ -34,6 +34,9 @@ export const config = {
     appSecret: process.env.WHATSAPP_APP_SECRET ?? "",
     verifyToken: process.env.WHATSAPP_VERIFY_TOKEN ?? "",
   },
+  // Cuenta para el pago de los cursos ACTIC y persona que da el acceso al Moodle.
+  ibanActic: process.env.IBAN_ACTIC ?? "ES57 0049 4365 5928 1004 1744",
+  responsableActic: process.env.RESPONSABLE_ACTIC ?? "responsable de ACTIC",
   // Flujo de Workflows de Teams que publica los avisos en el canal del equipo.
   teamsWebhookUrl: process.env.TEAMS_WEBHOOK_URL ?? "",
   puerto: entero(process.env.PUERTO, 3000),

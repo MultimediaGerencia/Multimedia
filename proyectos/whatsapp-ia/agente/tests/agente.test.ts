@@ -8,6 +8,7 @@ import { responder, type CrearMensaje, type OpcionesAgente } from "../src/agente
 import { cargarCalendario } from "../src/calendario.ts";
 import { Memoria } from "../src/memoria.ts";
 import { procesarEvento } from "../src/servidor.ts";
+import { conceptoActic } from "../src/herramientas.ts";
 import { interpretarWebhook, verificarFirma, type ClienteWhatsApp } from "../src/whatsapp.ts";
 
 const dir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../conocimiento");
@@ -28,6 +29,7 @@ function agente(crear: CrearMensaje, avisos: string[] = []): OpcionesAgente {
     crear, memoria: new Memoria(":memory:"), calendario: cargarCalendario(dir), instrucciones: "INSTRUCCIONES",
     modelo: "claude-opus-5-5", esfuerzo: "medium", maxTokens: 8000, urlPrivacidad: "https://privacidad",
     horasSesion: 24, horasPausaHumano: 24, avisarEquipo: (t) => { avisos.push(t); },
+    ibanActic: "ES57 0049 4365 5928 1004 1744", responsableActic: "responsable ACTIC",
   };
 }
 
@@ -150,4 +152,27 @@ test("servidor: descarta duplicados de Meta y se calla si el equipo contesta des
   await procesarEvento(op, wa, { ...ev, id: "w2" });
   assert.equal(enviados.length, 1);
   assert.equal(m.peticiones.length, 1);
+});
+
+test("concepto ACTIC: código del nivel, año y mes del pago en hora de Madrid", () => {
+  assert.equal(conceptoActic("medio", new Date("2026-10-16T10:00:00+02:00")), "AON2/2026/10");
+  assert.equal(conceptoActic("avanzado", new Date("2026-09-03T10:00:00+02:00")), "AON3/2026/09");
+  // El mes se calcula en hora de Madrid: el 31/12 a las 23:30 UTC ya es 1 de enero en Madrid
+  assert.equal(conceptoActic("medio", new Date("2026-12-31T23:30:00+01:00")), "AON2/2026/12");
+  assert.equal(conceptoActic("medio", new Date("2026-12-31T23:30:00Z")), "AON2/2027/01");
+});
+
+test("instrucciones de pago ACTIC: IBAN y concepto exactos, y aviso a la responsable", async () => {
+  const avisos: string[] = [];
+  const m = modeloFalso([
+    respuesta([{ type: "tool_use", id: "t1", name: "instrucciones_pago_actic", input: { nivel: "avanzado", nombre: "Pau" } }], "tool_use"),
+    respuesta([{ type: "text", text: "Aquí tens les dades." }], "end_turn"),
+  ]);
+  const op = agente(m.crear, avisos);
+  await responder(op, { contacto: "ES.7", texto: "Vull pagar per transferència", ahora });
+  const resultado = (m.peticiones[1].messages.at(-1)!.content as Anthropic.Beta.BetaToolResultBlockParam[])[0].content as string;
+  assert.match(resultado, /IBAN: ES57 0049 4365 5928 1004 1744/);
+  assert.match(resultado, /Concepto \(escríbelo exactamente así\): AON3\/2026\/10/);
+  assert.match(resultado, /129 €/);
+  assert.ok(avisos.some((a) => a.includes("AON3/2026/10") && a.includes("Pau")));
 });

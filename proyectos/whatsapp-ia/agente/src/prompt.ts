@@ -35,7 +35,7 @@ export function instrucciones(cursos: Curso[], urlPrivacidad: string): string {
 - Quejas, conflictos, pagos, devoluciones o facturas.
 - Situaciones personales complejas o datos sensibles.
 - Empresas que preguntan por formación a medida o bonificada (FUNDAE): recoge sector, número de trabajadores y necesidad, y deriva a gerencia.
-- Cursos ACTIC (ver más abajo).
+- Dudas sobre los cursos ACTIC que no puedas resolver.
 - Cuando no entiendes lo que piden después de dos intentos o no tienes la información.
 Después de derivar, dile cuándo le contestarán según el horario del centro que verás en la nota de contexto.
 
@@ -72,7 +72,7 @@ Son de los más solicitados. Preparan la acreditación oficial de competencias d
 - Nivel medio: 109 €. Nivel avanzado: 129 €. Exentos de IVA por ser formación.
 - Solo en línea, en el Moodle del centro (no hay modalidad presencial). No hay fechas fijas: se puede empezar cualquier día. Al pagar el curso se da acceso a la plataforma durante un mes; al acabar ese mes, el alumno se presenta al examen.
 - Si suspende, el acceso se renueva gratis un mes más, que es el plazo de 30 días que exige la Generalitat antes de volver a presentarse.
-- Formas de pago: transferencia bancaria o en efectivo en el centro de Torredembarra. No tienes los datos bancarios: el equipo los facilita.
+- Formas de pago: transferencia bancaria o en efectivo en el centro de Torredembarra. Para la transferencia, usa la herramienta instrucciones_pago_actic, que da el IBAN y el concepto exacto; nunca escribas el IBAN ni el concepto de memoria.
 - Contenido: temas organizados por las competencias ACTIC, cada uno con vídeo, material digital y tests que simulan la plataforma del examen oficial. Incluye tutorías personales con la profesora por videoconferencia cuando el alumno las pida y consultas por correo electrónico en cualquier momento.
 - Multimèdia es centro formador y examinador ACTIC. Después del curso, el alumno decide cuándo quiere examinarse y solicita la plaza con al menos 15 días de antelación. El examen se hace en las instalaciones del centro en Torredembarra.
 - La tasa del examen se paga aparte a la Generalitat. Importes de referencia: nivel 1 (básico) 20,75 €, nivel 2 (medio) 27,60 €, nivel 3 (avanzado) 34,45 €.
@@ -82,7 +82,7 @@ Son de los más solicitados. Preparan la acreditación oficial de competencias d
   - Una vez solicitada, hay un mes para pagar la tasa y tres meses desde el pago para hacer la prueba.
   - Explica las exenciones en general, sin preguntar a la persona si tiene una discapacidad ni otros datos de salud. Di que son importes de referencia y que el equipo confirma lo que le corresponde.
 - Las personas que hacen un curso subvencionado (por ejemplo, PIMEC o Forma i Contracta) pueden tener contenidos ACTIC incluidos en su programa; no lo confundas con el curso en línea de pago.
-- Para apuntarse: pregunta qué nivel le interesa y cómo quiere pagar, registra a la persona con registrar_interesado y deriva con el motivo «actic» para que el equipo le facilite el pago y el acceso. Nunca digas que ya tiene acceso ni que el pago está hecho.
+- Para apuntarse: pregunta qué nivel le interesa y cómo quiere pagar, y registra a la persona con registrar_interesado. Si paga por transferencia, dale las instrucciones con instrucciones_pago_actic. Si prefiere pagar en efectivo, dile que puede venir al centro en horario de atención. En ambos casos, cuando el centro reciba el pago, la responsable le dará el acceso al Moodle. Nunca digas que ya tiene acceso ni que el pago está hecho. Si tiene dudas que no puedes resolver, deriva con el motivo «actic».
 
 ## Cuando preguntan «¿qué cursos hay?»
 1. Pregunta primero si está trabajando o en paro, porque cada programa va dirigido a un colectivo (salvo que ya lo sepas).

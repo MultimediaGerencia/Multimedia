@@ -37,6 +37,21 @@ export const herramientas: Anthropic.Beta.BetaTool[] = [
     },
   },
   {
+    name: "instrucciones_pago_actic",
+    description:
+      "Devuelve las instrucciones de pago por transferencia del curso ACTIC en línea (IBAN, importe y concepto exacto) y avisa a la persona responsable. Úsala cuando alguien confirme que quiere hacer el curso y pagar por transferencia, después de registrarlo con registrar_interesado.",
+    strict: true,
+    input_schema: {
+      type: "object",
+      additionalProperties: false,
+      properties: {
+        nivel: { type: "string", enum: ["medio", "avanzado"] },
+        nombre: { type: "string", description: "Nombre de la persona" },
+      },
+      required: ["nivel", "nombre"],
+    },
+  },
+  {
     name: "registrar_baja",
     description: "Registra que la persona no quiere recibir más avisos ni comunicaciones por WhatsApp.",
     strict: true,
@@ -44,12 +59,25 @@ export const herramientas: Anthropic.Beta.BetaTool[] = [
   },
 ];
 
+const ACTIC = {
+  medio: { codigo: "AON2", importe: "109 €" },
+  avanzado: { codigo: "AON3", importe: "129 €" },
+} as const;
+
+/** Concepto de la transferencia: AON2 o AON3 / año / mes del pago (hora de Madrid). Ej.: AON2/2026/10. */
+export function conceptoActic(nivel: "medio" | "avanzado", fecha: Date): string {
+  const [anio, mes] = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Madrid", year: "numeric", month: "2-digit" }).format(fecha).split("-");
+  return `${ACTIC[nivel].codigo}/${anio}/${mes}`;
+}
+
 export interface ContextoHerramienta {
   memoria: Memoria;
   contacto: string;
   ahora: number;
   horasPausaHumano: number;
   avisarEquipo: (texto: string) => Promise<void> | void;
+  iban?: string;
+  responsableActic?: string;
 }
 
 export async function ejecutarHerramienta(nombre: string, entrada: unknown, ctx: ContextoHerramienta): Promise<string> {
@@ -77,6 +105,22 @@ export async function ejecutarHerramienta(nombre: string, entrada: unknown, ctx:
       ctx.memoria.pausar(ctx.contacto, ctx.ahora + ctx.horasPausaHumano * 3_600_000);
       await ctx.avisarEquipo(`${e.urgente === true ? "URGENTE · " : ""}Conversación derivada (${e.motivo}) · ${ctx.memoria.referencia(ctx.contacto)}: ${resumen}`);
       return "Derivado. El equipo continuará la conversación; despídete indicando cuándo le contestarán.";
+    }
+    case "instrucciones_pago_actic": {
+      const nivel = e.nivel === "avanzado" ? "avanzado" : e.nivel === "medio" ? "medio" : undefined;
+      if (!nivel) throw new Error("Nivel no válido");
+      if (!ctx.iban) throw new Error("No hay cuenta configurada para el pago");
+      const concepto = conceptoActic(nivel, new Date(ctx.ahora));
+      await ctx.avisarEquipo(
+        `Pago ACTIC pendiente (para ${ctx.responsableActic ?? "responsable de ACTIC"}): ${String(e.nombre)} · nivel ${nivel} · concepto ${concepto} · ${ctx.memoria.referencia(ctx.contacto)}`,
+      );
+      return [
+        `Importe: ${ACTIC[nivel].importe} (exento de IVA).`,
+        `IBAN: ${ctx.iban}`,
+        `Concepto (escríbelo exactamente así): ${concepto}`,
+        "También puede pagar en efectivo en el centro de Torredembarra.",
+        "Cuando el centro reciba el pago, la responsable le dará el acceso al Moodle. Copia estos datos tal cual en tu respuesta.",
+      ].join("\n");
     }
     case "registrar_baja": {
       ctx.memoria.darDeBaja(ctx.contacto);

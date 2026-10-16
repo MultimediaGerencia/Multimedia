@@ -55,6 +55,9 @@ El agente lo presenta como un punto fuerte, con esta precisión: es un **comprom
 - **Modalidad:** solo en línea, en el Moodle del centro. No se ofrecen presenciales porque la oferta subvencionada ya incluye contenidos ACTIC y así se amortiza el curso en línea.
 - **Acceso:** se puede empezar cualquier día. Al pagar se da acceso durante un mes y después el alumno se presenta al examen. Si suspende, se renueva gratis un mes más (los 30 días que exige la Generalitat antes de repetir).
 - **Pago:** transferencia bancaria o en efectivo en Torredembarra.
+  - Cuenta: ES57 0049 4365 5928 1004 1744.
+  - Concepto obligatorio: `AON` + nivel (`2` medio, `3` avanzado) + `/` año + `/` mes del pago. Ejemplos: `AON2/2026/10`, `AON3/2026/10`. Es la nomenclatura del control de alumnos ACTIC.
+  - El agente da el IBAN y el concepto calculado por el programa (nunca de memoria) y avisa por Teams a la responsable de ACTIC, que comprueba el ingreso y da el acceso al Moodle.
 - **Examen:** Multimèdia es centro formador y examinador. Tras el curso, el alumno elige la fecha y solicita la plaza con al menos 15 días de antelación. Se examina en Torredembarra y paga la tasa de examen a la Generalitat.
 - **Contenido del curso:** temas por competencias ACTIC con vídeo, material digital y tests que simulan la plataforma del examen. Tutorías personales por videoconferencia bajo demanda y consultas por correo en cualquier momento.
 - **Cómo actúa el agente:** informa, registra al interesado y lo pasa al equipo para el pago y el acceso.
