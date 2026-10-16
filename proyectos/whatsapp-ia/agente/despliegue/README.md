@@ -34,6 +34,16 @@ Además:
    ```
 5. En Meta, configurar el webhook con `https://whatsapp.multimediatarragona.com/webhook` y el `WHATSAPP_VERIFY_TOKEN` del archivo de configuración.
 
+## Alternativa: Synology o cualquier equipo con Docker
+
+En `despliegue/` hay un `Dockerfile` y un `docker-compose.yml` con dos contenedores: el agente y un túnel de Cloudflare. El túnel publica el agente en HTTPS **sin abrir puertos en el router**.
+
+1. Crear el túnel en Cloudflare (Zero Trust → Networks → Tunnels), con el nombre público `whatsapp.multimediatarragona.com` apuntando a `http://agente:3000`. El subdominio tiene que estar gestionado en Cloudflare.
+2. Copiar `.env.example` como `despliegue/agente.env`, rellenar las claves y añadir `TUNNEL_TOKEN=` con el token del túnel.
+3. En Synology: Container Manager → Proyecto → Crear, con la carpeta del proyecto y el `docker-compose.yml`. En otro equipo: `docker compose up -d --build` desde `agente/despliegue`.
+
+Recomendado para el piloto. Para el número real es preferible un servidor externo: no depende de la luz ni de la conexión de la oficina y no comparte equipo con las copias de seguridad.
+
 ## Mantenimiento
 
 - Ver el registro: `sudo journalctl -u agente-whatsapp -f`
