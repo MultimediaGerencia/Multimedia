@@ -15,7 +15,7 @@ Lo marcado **[COMPLETAR]** lo debe rellenar el centro. Los textos van primero en
 | Horario | Lunes a jueves: 9:00-13:00 y 15:00-19:00 · Viernes: 9:00-15:00 · Sábado y domingo: cerrado |
 | Correo | info@multimediatarragona.com |
 | Web | https://www.multimediatarragona.com |
-| Redes | Instagram, X y Facebook **[COMPLETAR los enlaces]** |
+| Redes | Instagram: https://www.instagram.com/multimediatgn/ · Facebook: https://www.facebook.com/multimediatarragona.tic · LinkedIn: https://www.linkedin.com/in/multimedia-tarragona/ |
 
 ## 2. Mensaje de bienvenida
 
