@@ -1,0 +1,8 @@
+node_modules/
+# Conversaciones, interesados y avisos: datos personales, nunca en el repositorio
+datos/
+*.db
+*.db-wal
+*.db-shm
+# Claves
+.env

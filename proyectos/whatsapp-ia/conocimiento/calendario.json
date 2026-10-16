@@ -1,0 +1,30 @@
+{
+  "_nota": "Fuente que usa el agente para saber si el centro está abierto. Mantener igual que calendario-centro.md.",
+  "zona_horaria": "Europe/Madrid",
+  "horario_habitual": {
+    "1": [["09:00", "13:00"], ["15:00", "19:00"]],
+    "2": [["09:00", "13:00"], ["15:00", "19:00"]],
+    "3": [["09:00", "13:00"], ["15:00", "19:00"]],
+    "4": [["09:00", "13:00"], ["15:00", "19:00"]],
+    "5": [["09:00", "15:00"]]
+  },
+  "jornada_intensiva": [
+    { "desde": "2027-06-28", "hasta": "2027-07-30", "franjas": [["08:30", "15:30"]] },
+    { "desde": "2027-08-23", "hasta": "2027-08-27", "franjas": [["08:30", "15:30"]] }
+  ],
+  "cierres": [
+    { "desde": "2026-12-07", "hasta": "2026-12-08", "motivo": "Festa del centre i la Puríssima" },
+    { "desde": "2026-12-24", "hasta": "2026-12-26", "motivo": "Nadal" },
+    { "desde": "2026-12-28", "hasta": "2027-01-01", "motivo": "Vacances de Nadal i Cap d'Any" },
+    { "desde": "2027-01-06", "hasta": "2027-01-06", "motivo": "Reis" },
+    { "desde": "2027-03-26", "hasta": "2027-03-26", "motivo": "Divendres Sant" },
+    { "desde": "2027-03-29", "hasta": "2027-03-29", "motivo": "Dilluns de Pasqua" },
+    { "desde": "2027-06-24", "hasta": "2027-06-25", "motivo": "Sant Joan i festa del centre" },
+    { "desde": "2027-08-02", "hasta": "2027-08-20", "motivo": "Vacances d'estiu" },
+    { "desde": "2027-10-12", "hasta": "2027-10-12", "motivo": "Festa Nacional" },
+    { "desde": "2027-11-01", "hasta": "2027-11-01", "motivo": "Tots Sants" },
+    { "desde": "2027-12-06", "hasta": "2027-12-08", "motivo": "Constitució, festa del centre i la Puríssima" },
+    { "desde": "2027-12-24", "hasta": "2027-12-24", "motivo": "Vacances de Nadal" },
+    { "desde": "2027-12-27", "hasta": "2027-12-31", "motivo": "Vacances de Nadal" }
+  ]
+}

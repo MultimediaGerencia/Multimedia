@@ -1,0 +1,41 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { cargarOferta, leerCsv, textoOferta } from "../src/conocimiento.ts";
+import { instrucciones } from "../src/prompt.ts";
+
+const dir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../conocimiento");
+
+test("lee CSV con comillas y separador ;", () => {
+  const filas = leerCsv('a;b\n"x;1";"di ""hola"""\n');
+  assert.deepEqual(filas, [{ a: "x;1", b: 'di "hola"' }]);
+});
+
+test("carga los 30 cursos de la oferta, todos con estado conocido y en Torredembarra", () => {
+  const cursos = cargarOferta(dir);
+  assert.equal(cursos.length, 30);
+  for (const c of cursos) {
+    assert.ok(["aprobado", "pendiente_resolucion"].includes(c.estado), c.codigo);
+    assert.equal(c.sede, "Torredembarra");
+    assert.equal(c.modalidad, "Presencial");
+  }
+  assert.equal(cursos.filter((c) => c.estado === "aprobado").length, 16);
+});
+
+test("la oferta no contiene datos de docentes ni los módulos ocultos", () => {
+  const texto = fs.readFileSync(path.join(dir, "oferta-2026-27.csv"), "utf8");
+  assert.doesNotMatch(texto, /\b6\d{8}\b/); // teléfonos móviles
+  assert.doesNotMatch(texto, /IMPE0110_MF|IMPE110_MF/);
+});
+
+test("las instrucciones marcan lo pendiente como previsto y son estables", () => {
+  const cursos = cargarOferta(dir);
+  const t = textoOferta(cursos);
+  assert.match(t, /PREVIST, pendent de resolució/);
+  assert.match(t, /APROVAT/);
+  // Sin fecha ni hora dentro: si cambiaran en cada mensaje, la caché no funcionaría
+  assert.equal(instrucciones(cursos, "https://x"), instrucciones(cursos, "https://x"));
+  assert.doesNotMatch(instrucciones(cursos, "https://x"), /\d{2}:\d{2}:\d{2}/);
+});
