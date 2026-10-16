@@ -15,8 +15,8 @@ Escribe como si fueras un usuario. Comandos:
   /salir
 `);
 
-if (!process.env.ANTHROPIC_API_KEY && !process.env.ANTHROPIC_AUTH_TOKEN) {
-  console.log("Aviso: no hay clave de la API de Claude (ANTHROPIC_API_KEY). Sin ella el agente responderá con el mensaje de error.\n");
+if (!process.env.CLAVE_CLAUDE && !process.env.ANTHROPIC_API_KEY && !process.env.ANTHROPIC_AUTH_TOKEN) {
+  console.log("Aviso: no hay clave de la API de Claude (CLAVE_CLAUDE o ANTHROPIC_API_KEY). Sin ella el agente responderá con el mensaje de error.\n");
 }
 
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout, prompt: "Tú > " });

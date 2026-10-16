@@ -29,7 +29,7 @@ Hace falta Node.js 22.18 o superior y una clave de la API de Claude de la empres
 ```bash
 cd proyectos/whatsapp-ia/agente
 npm install
-export ANTHROPIC_API_KEY=...      # clave de la cuenta de la empresa
+export ANTHROPIC_API_KEY=...      # clave de la cuenta de la empresa (o CLAVE_CLAUDE; en las sesiones de Claude Code en la nube, usa CLAVE_CLAUDE)
 npm run simulador
 ```
 
@@ -38,7 +38,7 @@ Se escribe como si fuera un usuario de WhatsApp. Comandos: `/persona` simula que
 ## Pruebas automáticas
 
 ```bash
-npm test          # 20 pruebas, sin coste: el modelo se simula
+npm test          # 24 pruebas, sin coste: el modelo se simula
 npm run typecheck
 ```
 
