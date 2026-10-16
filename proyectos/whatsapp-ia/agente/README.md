@@ -38,7 +38,7 @@ Se escribe como si fuera un usuario de WhatsApp. Comandos: `/persona` simula que
 ## Pruebas automáticas
 
 ```bash
-npm test          # 20 pruebas, sin coste: el modelo se simula
+npm test          # 24 pruebas, sin coste: el modelo se simula
 npm run typecheck
 ```
 

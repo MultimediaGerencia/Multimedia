@@ -37,6 +37,19 @@ const MAX_VUELTAS = 6;
 const MENSAJE_ERROR =
   "Ara mateix no puc respondre. Una persona de l'equip et contestarà com més aviat millor. / Ahora mismo no puedo responder. Una persona del equipo te contestará lo antes posible.";
 
+/** Traduce un error técnico de la API a un motivo breve en castellano para el aviso al equipo. */
+export function motivoError(error: unknown): string {
+  const estado = (error as { status?: number }).status;
+  if (estado === 401 || estado === 403) return "clave de la API no válida o sin permisos";
+  if (estado === 429) return "límite de uso o de gasto de la API alcanzado";
+  if (estado === 400) return "petición rechazada por la API";
+  if (estado !== undefined && estado >= 500) return "servicio de la IA no disponible temporalmente";
+  const nombre = (error as Error)?.name ?? "";
+  if (/Connection|Timeout/i.test(nombre)) return "sin conexión con el servicio de la IA";
+  if (/api[_ ]?key|apiKey|authentication/i.test(String((error as Error)?.message))) return "falta la clave de la API (ANTHROPIC_API_KEY)";
+  return "error interno del asistente";
+}
+
 /** Cliente real de la API de Claude. */
 export function clienteClaude(): CrearMensaje {
   const client = new Anthropic();
@@ -115,7 +128,8 @@ export async function responder(op: OpcionesAgente, entrada: Entrada): Promise<s
       anadir({ role: "user", content: resultados });
     }
   } catch (error) {
-    await op.avisarEquipo(`Error del asistente con ${memoria.referencia(contacto)}: ${(error as Error).message}`);
+    console.error("Error del asistente:", error);
+    await op.avisarEquipo(`El asistente no ha podido responder a ${memoria.referencia(contacto)} (${motivoError(error)}). Revisar la conversación.`);
     memoria.cerrarSesion(sesion);
     return nuevo ? conAviso(MENSAJE_ERROR) : MENSAJE_ERROR;
   }

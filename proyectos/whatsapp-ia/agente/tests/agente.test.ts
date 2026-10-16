@@ -4,7 +4,7 @@ import crypto from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type Anthropic from "@anthropic-ai/sdk";
-import { responder, type CrearMensaje, type OpcionesAgente } from "../src/agente.ts";
+import { motivoError, responder, type CrearMensaje, type OpcionesAgente } from "../src/agente.ts";
 import { cargarCalendario } from "../src/calendario.ts";
 import { Memoria } from "../src/memoria.ts";
 import { procesarEvento } from "../src/servidor.ts";
@@ -175,4 +175,21 @@ test("instrucciones de pago ACTIC: IBAN y concepto exactos, y aviso a la respons
   assert.match(resultado, /Concepto \(escríbelo exactamente así\): AON3\/2026\/10/);
   assert.match(resultado, /129 €/);
   assert.ok(avisos.some((a) => a.includes("AON3/2026/10") && a.includes("Pau")));
+});
+
+test("errores de la API: el aviso al equipo va en castellano y sin detalles técnicos", async () => {
+  const avisos: string[] = [];
+  const fallo = Object.assign(new Error("401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\"}}"), { status: 401 });
+  const op = agente(async () => { throw fallo; }, avisos);
+  const original = console.error;
+  console.error = () => {};
+  try {
+    assert.match((await responder(op, { contacto: "ES.8", texto: "Hola", ahora }))!, /persona de l'equip/);
+  } finally {
+    console.error = original;
+  }
+  assert.match(avisos[0], /clave de la API no válida/);
+  assert.doesNotMatch(avisos[0], /authentication_error/);
+  assert.equal(motivoError(Object.assign(new Error("x"), { status: 529 })), "servicio de la IA no disponible temporalmente");
+  assert.equal(motivoError(new Error("Could not resolve authentication method. Expected the apiKey to be set")), "falta la clave de la API (ANTHROPIC_API_KEY)");
 });
